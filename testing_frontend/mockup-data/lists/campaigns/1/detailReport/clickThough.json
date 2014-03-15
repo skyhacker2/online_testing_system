@@ -1,0 +1,26 @@
+
+{
+	"code": 0,
+	"message": "ok",
+	"data": {
+		"total": 100,
+		"headers": ["Email", "First Name", "Last Name"],
+		"subHeaders": ["Action Time", "URL"],
+		"rows": [
+			[
+				[
+					["2013-12-24 15:30:20", "http://www.radicasys.com"],
+					["2013-12-24 15:32:20", "http://www.radicasys.com"]
+				], 
+				"gary.wang@radicasys.com", "Gary", "Wang"
+			],
+			[
+				[
+					["2013-12-24 15:30:20", "http://www.radicasys.com"],
+					["2013-12-24 15:32:20", "http://www.radicasys.com"]
+				], 
+				"gary.wang@radicasys.com", "Gary", "Wang"
+			]
+		]
+	}
+}

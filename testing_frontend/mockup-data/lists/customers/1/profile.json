@@ -1,0 +1,94 @@
+{
+	"code": 0,
+	"message": "ok",
+	"data": {
+		"summary": {
+			"email":"webyom@gmail.com",
+			"image":"2a9c765f650472e08180d94596f204cc",
+			"name":"Gary Wang",
+			"subscribed": 1388683500000,
+			"favoriteEmailClient": "Gmail",
+			"lastUpdate": 1388673500000,
+			"favoriteDevice": "iPad"
+		},
+		"detail": {
+			"keys": ["Email", "Mobile", "Firt Name", "Last Name"],
+			"values": ["webyom@gmail.com", "18675510948", "Gary", "Wang"]
+		},
+		"activity": {
+			"campaignsReceived": 100,
+			"openRate": 20.1,
+			"clickRate": 10.1,
+			"campaigns": [
+				{
+					"id":1,
+					"name":"20131203_110.2_Galaxy_Macau_Dec_eNews_TC",
+					"activities":[
+						{
+							"time":1388683500000,
+							"act":"unsubscribed"
+						},
+						{
+							"time":1388673500000,
+							"act":"complained"
+						},
+						{
+							"time": 1388651100000,
+							"act": "forwarded"
+						},
+						{
+							"time":1388643900000,
+							"act":"clicked",
+							"url":"http://www.qq.com",
+							"title":"腾讯QQ"
+						},
+						{
+							"time":1388557500000,
+							"act":"opened"
+						},
+						{
+							"time": 1388557800000,
+							"act":"received"
+						},
+						{
+							"time": 1388557800000,
+							"act": "bounced"
+						}
+					]
+				},
+				{
+					"id":2,
+					"name":"20131203_110.2_Galaxy_Macau_Dec_eNews_TC",
+					"activities":[
+						{
+							"time":1388683500000,
+							"act":"unsubscribed"
+						},
+						{
+							"time": 1388651100000,
+							"act": "forwarded"
+						},
+						{
+							"time":1388643900000,
+							"act":"clicked",
+							"url":"http://www.qq.com",
+							"title":null
+						},
+						{
+							"time":1388557500000,
+							"act":"opened"
+						},
+						{
+							"time": 1388557800000,
+							"act":"received"
+						},
+						{
+							"time": 1388557800000,
+							"act": "bounced"
+						}
+					]
+				}
+			]
+		}
+	}
+}

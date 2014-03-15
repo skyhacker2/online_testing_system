@@ -1,0 +1,202 @@
+.block-basic {
+  background-color: #eeeeee;
+  padding: 13px;
+  margin: 13px 0;
+  color: #555555;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.block-basic:before,
+.block-basic:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.block-basic:after {
+  clear: both;
+}
+.basic-info {
+  position: relative;
+}
+.basic-info .avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  float: left;
+}
+.basic-info .info {
+  margin-left: 120px;
+}
+.basic-info .info label {
+  font-weight: normal;
+}
+.basic-info .info .email {
+  font-weight: normal;
+  font-size: 19.2px;
+}
+.basic-info .info .name {
+  font-size: 24px;
+}
+.properties .row {
+  margin-bottom: 10px;
+}
+.properties .row .col-md-6 div {
+  border-bottom: dotted 1px #999999;
+  padding: 10px 0;
+}
+.properties .row .col-md-6 div label {
+  display: block;
+  font-weight: bold;
+}
+.activity .statistics .well {
+  text-align: center;
+}
+.activity .statistics .well .count {
+  font-size: 32px;
+  display: block;
+}
+.activity .campaigns .campaign {
+  border: solid 2px #eeeeee;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.activity .campaigns .campaign .name {
+  font-size: 17.6px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #eeeeee;
+}
+.activity .campaigns .campaign .summary {
+  margin-top: 13px;
+}
+.activity .campaigns .campaign .summary .label {
+  font-size: 16px;
+  font-weight: 200;
+}
+.activity .campaigns .campaign .acts {
+  margin-top: 13px;
+}
+.activity .campaigns .campaign .acts:before,
+.activity .campaigns .campaign .acts:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.activity .campaigns .campaign .acts:after {
+  clear: both;
+}
+.activity .campaigns .campaign .acts .act {
+  float: left;
+  position: relative;
+  margin-bottom: 5px;
+  width: 140px;
+  background-color: #fbfbfb;
+}
+.activity .campaigns .campaign .acts .act .date {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: block;
+  background-color: #eeeeee;
+  font-size: 12.8px;
+  padding: 0 5px;
+  font-weight: normal;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.activity .campaigns .campaign .acts .act .inner {
+  width: 80px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.activity .campaigns .campaign .acts .act .inner .icon {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 25px;
+  background-color: #eeeeee;
+  display: block;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.activity .campaigns .campaign .acts .act .inner .icon [class^="icon-"] {
+  line-height: 15px;
+  color: #808080;
+}
+.activity .campaigns .campaign .acts .act .inner .type {
+  color: #666666;
+  display: block;
+  line-height: 18.2px;
+  font-size: 12.8px;
+}
+.activity .campaigns .campaign .acts .act .inner .time {
+  color: #999999;
+  display: block;
+  line-height: 18.2px;
+}
+.activity .campaigns .campaign .acts .act .inner .link {
+  margin-left: 35px;
+}
+.activity .campaigns .campaign .acts .act.alt {
+  background-color: #eeeeee;
+}
+.activity .campaigns .campaign .acts .act.alt .date {
+  background-color: #f6f6f6;
+}
+.activity .campaigns .campaign .acts .act.alt .inner .icon {
+  background-color: #d5d5d5;
+}
+.activity .campaigns .campaign .acts .act.alt:before {
+  border-top: solid 2px #d5d5d5;
+}
+.activity .campaigns .campaign .acts .act:before {
+  content: "";
+  border-top: solid 2px #eeeeee;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 40px;
+  z-index: 1;
+}
+.activity .campaigns .campaign .acts .act:first-child:before {
+  left: 70px;
+}
+.activity .campaigns .campaign .acts .act:last-child:before {
+  right: 70px;
+}
+.activity .campaigns .campaign .acts .act.w2 {
+  width: 200px;
+}
+.activity .campaigns .campaign .acts .act.w3 {
+  width: 280px;
+}

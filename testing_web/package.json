@@ -1,0 +1,10 @@
+{
+  "name": "Testing",
+  "description": "在线考试系统",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "validator": "^3.5.0"
+  }
+}

@@ -1,0 +1,21 @@
+
+{
+  "code" : 0,
+  "message" : "",
+  "data" : {
+    "pageNumber" : 0,
+    "pageSize" : 15,
+    "direction" : null,
+    "property" : null,
+    "total" : 1,
+    "start" : null,
+    "end" : null,
+    "day" : null,
+    "campaignName" : "Campaign for activities detail reports",
+    "headers" : [ "Action Time", "Type", "Reason", "Email", "Mobile", "First Name", "Last Name" ],
+    "rows" : [ [ "2013-12-29 00:00", "Hard Bounce", null, "sub5@radicasys.com", "+86 20 8523 5485", "First Name 5", "Last Name 5" ] ],
+    "offset" : 0,
+    "sort" : null,
+    "totalPages" : 1
+  }
+}

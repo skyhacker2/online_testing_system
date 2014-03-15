@@ -1,0 +1,182 @@
+@import "../../../js/lib/bootstrap-3.0/less/variables.less";
+@import "../../../js/lib/bootstrap-3.0/less/mixins.less";
+@import "../../../js/lib/bootstrap-3.0/less/manggis/mixins.less";
+
+.basic-info {
+	position: relative;
+	.avatar {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100px;
+		height: 100px;
+		.border-radius(5px);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: 100px 100px;
+		float: left;
+	}
+	.info {
+		margin-left: 120px;
+		label {
+			font-weight: normal;
+		}
+		.email {
+			font-weight: normal;
+			font-size: @font-size-base * 1.2;
+		}
+		.name {
+			font-size: @font-size-base * 1.5;
+		}
+	}
+}
+
+.properties {
+	.row {
+		margin-bottom: 10px;
+		.col-md-6 {
+			div {
+				border-bottom: dotted 1px @gray-light;
+				padding: 10px 0;
+				label {
+					display: block;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.activity {
+	.statistics {
+		.well {
+			text-align: center;
+			.count {
+				font-size: @font-size-base * 2;
+				display: block;
+			}
+		}
+	}
+	.campaigns {
+		.campaign {
+			border: solid 2px @gray-lighter;
+			padding: 15px;
+			margin-bottom: 30px;
+			.border-radius(5px);
+			.name {
+				font-size: @font-size-base * 1.1;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				border-bottom: solid 1px @gray-lighter;
+			}
+			.summary {
+				margin-top: @line-height-computed / 2;
+				.label {
+					font-size: @font-size-base * 1;
+					font-weight: 200;
+				}
+			}
+			.acts {
+				margin-top: @line-height-computed / 2;
+				.clearfix;
+				.act {
+					float: left;
+					position: relative;
+					margin-bottom: 5px;
+					width: 140px;
+					background-color: lighten(@gray-lighter, 5%);
+					.date {
+						position: absolute;
+						left: 5px;
+						top: 0;
+						display: block;
+						background-color: @gray-lighter;
+						font-size: @font-size-base * 0.8;
+						padding: 0 5px;
+						font-weight: normal;
+						.border-bottom-radius(3px);
+					}
+					.inner {
+						width: 80px;
+						padding-top: 25px;
+						padding-bottom: 10px;
+						margin-left: 30px;
+						text-align: center;
+						position: relative;
+						z-index: 2;
+						.icon {
+							display: inline-block;
+							text-align: center;
+							width: 30px;
+							height: 30px;
+							line-height: 30px;
+							margin-left: 25px;
+							background-color: @gray-lighter;
+							display: block;
+							.border-radius(15px);
+							[class^="icon-"] {
+								line-height: 15px;
+								color: darken(@gray-light, 10%);
+							}
+						}
+						.type {
+							color: darken(@gray-light, 20%);
+							display: block;
+							line-height: @line-height-computed * 0.7;
+							font-size: @font-size-base * 0.8;
+						}
+						.time {
+							color: @gray-light;
+							display: block;
+							line-height: @line-height-computed * 0.7;
+						}
+						.link {
+							margin-left: 35px;
+						}
+					}
+					&.alt {
+						background-color: @gray-lighter;
+						.date {
+							background-color: lighten(@gray-lighter, 3%);
+						}
+						.inner {
+							.icon {
+								background-color: darken(@gray-lighter, 10%);
+							}
+						}
+						&:before {
+							border-top: solid 2px darken(@gray-lighter, 10%);
+						}
+					}
+					&:before {
+						content: "";
+						border-top: solid 2px @gray-lighter;
+						position: absolute;
+						display: block;
+						left: 0;
+						right: 0;
+						top: 40px;
+						z-index: 1;
+					}
+					&:first-child {
+						&:before {
+							left: 70px;
+						}
+					}
+					&:last-child {
+						&:before {
+							right: 70px;
+						}
+					}
+					&.w2 {
+						width: 200px;
+					}
+					&.w3 {
+						width: 280px;
+					}
+				}
+			}
+		}
+	}
+}
+

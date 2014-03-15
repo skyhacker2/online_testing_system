@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>${{common.appName}}$ - ${{login.title}}$</title>
+<!-- include "../inc/head.inc.html" -->
+<script type="text/javascript">
+document.write([
+	'<link rel="stylesheet" href="' + G.CDN_ORIGIN + G.CDN_BASE + 'css/mod/login/main.css" />'
+].join(''));
+</script>
+</script>
+</head>
+<body class="theme-background-lighter">
+<!-- include "../inc/body-theme-style.inc.html" -->
+
+<!-- include "../inc/body-footer.inc.html" -->
+
+<!-- include "../../js/lib/yom/require/config.js" -->
+<!-- include "../../js/lib/yom/require/require.js" -->
+<!-- require "../../js/lib/yom/require-plugin/jsonp" -->
+<!-- require "../../js/lang/%{{_lang_}}%/common" -->
+<!-- require "../../js/lang/%{{_lang_}}%/login" -->
+<!-- include "../../js/inc/footer.js" -->
+<!-- require "../../js/lang/%{{_lang_}}%/login" -->
+<!-- require "../../js/mod/login/controllers/login" -->
+<div id="main-div"></div>
+<script type="text/javascript">
+G.pageRequire(['../../js/mod/login/controllers/login'], function(Login) {
+	new Login({el: '#main-div'});
+});
+</script>
+</body>
+</html>

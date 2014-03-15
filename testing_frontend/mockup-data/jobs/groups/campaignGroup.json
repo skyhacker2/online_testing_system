@@ -1,0 +1,59 @@
+{
+"code" : 0,
+  "message" : "Operation has been executed successfully.",
+  "data" : [ {
+    "jobId" : "9",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409599,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  }, {
+    "jobId" : "8",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409598,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 1
+  }, {
+    "jobId" : "7",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409597,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 2
+  }, {
+    "jobId" : "6",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409596,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  }, {
+    "jobId" : "1",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409591,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  }, {
+    "jobId" : "5",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409595,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  }, {
+    "jobId" : "4",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409594,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  }, {
+    "jobId" : "3",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409593,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  }, {
+    "jobId" : "2",
+    "jobGroupName" : "campaignGroup",
+    "scheduleDate" : 13891632409592,
+    "fullClassPath" : "com.radica.service.external.schedule.job.CampaignJob",
+    "timeMode": 0
+  } ]
+}

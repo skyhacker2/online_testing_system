@@ -1,0 +1,103 @@
+@import "../../../js/lib/bootstrap-3.0/less/variables.less";
+@import "../../../js/lib/bootstrap-3.0/less/mixins.less";
+@import "../../../js/lib/bootstrap-3.0/less/manggis/mixins.less";
+
+.login-container {
+	padding: 20px;
+	.transition(margin-top 0.4s);
+	.panel .panel-heading {
+		background-image: url(../../../js/lib/bootstrap-3.0/img/manggis.png);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		padding: 12px 15px;
+	}
+	.alerts-container {
+		position: static;
+		width: 100%;
+	}
+	&.off {
+		margin-top: -500px;
+	}
+}
+
+@media (min-width: @screen-xs) {
+	.login-container {
+		width: 440px;
+		margin: 60px auto;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-device-pixel-ratio: 2) {
+	.login-container .panel .panel-heading {
+		background-image: url(../../../js/lib/bootstrap-3.0/img/manggis-2x.png);
+		background-size: auto 26px;
+	}
+}
+body {
+	background-image: url("../../../img/mod/login/login-background2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 768px;
+	background-position: top left;
+}
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+
+	.form-control {
+		position: relative;
+		font-size: 16px;
+		padding: 10px;
+		height: auto;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	.form-control:focus {
+		z-index: 2;
+	}
+	input[type="text"] {
+		margin-bottom: -1px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	input[type="password"] {
+		margin-bottom: 10px;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+}
+.form-signin, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.accout-well {
+	margin-top: 20px;
+	padding: 40px 0 20px 0;
+	//background-color: #f7f7f7;
+	background-image: url("../../../img/mod/login/login-well.jpg");
+	opacity: 0.8;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title {
+	color: #555;
+	font-size: 18px;
+	font-weight: normal;
+	display: block;
+}
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	border-radius: 50%;
+}
+.need-help {
+	margin-top: 10px;
+}
+.new-accout {
+	display: block;
+	margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+{
+	"code":0,
+	"message":"ok",
+	"data":{
+		"domain": {
+			"id" : "5203672930045fd51a6e4cb1",
+			"name": "www.radicasys.com"
+		},
+		"pageNumber" : 0,
+		"pageSize" : 15,
+		"direction" : null,
+		"property" : null,
+		"total" : 600,
+		"domains" : [
+			{
+				"id" : "1",
+				"name": "www.example.com"
+			},
+			{
+				"id" : "2",
+				"name": "www.ri.com"
+			}
+		],
+		"totalPages" : 2
+	}
+}

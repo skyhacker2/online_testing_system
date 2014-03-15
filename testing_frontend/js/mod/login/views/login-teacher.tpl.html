@@ -1,0 +1,37 @@
+<%
+var rfl = require('rfl');
+var langResourceCommon = require('lang/{{G.LANG}}/common');
+var langResourceGroup = require('lang/{{G.LANG}}/group');
+%>
+<style type="text/css">
+	.teacher-btn, .student-btn {
+		position: absolute;
+	}
+	.student-btn {
+		left: 0px;
+		top: 250px;
+	}
+	body {
+		background-image: url('<%G.CGI_BASE%>img/mod/login/login-background.jpg');
+	}
+</style>
+<div>
+	<a class="student-btn" href="javascript:void(0);">
+		<img src="<%G.CGI_BASE%>img/mod/login/student-login.jpg" width="200px" height="60px">
+	</a>
+<div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+			<div class="accout-well">
+				
+				<form class="form-signin" id="teacher-login-form">
+					<h1>教师登陆</h1>
+					<input type="text" class="form-control" placeholder="用户名" name="username" required autofoucs>
+					<input type="password" class="form-control" placeholder="密码" name="password" required>
+					<button class="btn btn-lg btn-primary btn-block" type="button" data-login-btn>登陆</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

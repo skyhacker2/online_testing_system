@@ -1,0 +1,51 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Started at 2014-03-15 15:12:41
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/ajax-customized.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/ajax-customized.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/ajax.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/ajax.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/list.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/list.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/local.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/local.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/manager.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/manager.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/relation-customized.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/relation-customized.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/relation.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/relation.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/route.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/route.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/spine.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/lib/spine/spine.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/mod/login/controllers/login-student.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/mod/login/controllers/login-student.js
+------------------------------------------------------------------------
+Build
+Input: /Users/eleven/projects/frontend/testing_frontend/js/mod/login/controllers/login-teacher.coffee
+Output: /Users/eleven/projects/frontend/testing_frontend/js/mod/login/controllers/login-teacher.js
+Failed to compile coffee script, error at line31: /Users/eleven/projects/frontend/testing_frontend/js/mod/login/controllers/login-teacher.coffee
+SyntaxError: unexpected {
+------------------------------------------------------------------------
+Terminated! Spent 712ms
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

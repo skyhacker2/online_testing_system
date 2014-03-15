@@ -1,0 +1,10 @@
+{
+	"code": 0,
+	"message": "ok",
+	"data": {
+			"months":[],
+			"datas":[
+						[["QQ.com",30.10],["163.com",19.90],["159.com",10.0],["168.com",5.0],["gmail.com",5.0],["cc.com",5.0],["bb.com",5.0],["aa.com",5.0],["dd.com",5.0],["ee.com",5.0],["ff.com",5.0]]
+					]
+		}
+}

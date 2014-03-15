@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>${{common.label.viewGrade}}$ - Radica Intimate 4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+
+<script type="text/javascript">
+
+
+var ROOT = (location.pathname.match(/(.*?\/)static\//) || ['/', '/'])[1];
+
+var G = G || {
+	DOMAIN: document.domain,
+
+	ORIGIN: location.protocol + "//" + location.host,
+	CGI_ORIGIN: location.protocol + "//" + location.host,
+	CDN_ORIGIN: location.protocol + "//" + location.host,
+	SNAPSHOT_ORIGIN: location.protocol + "//" + location.host,
+
+	BASE: '' ? '' : ROOT + 'static/',
+	CGI_BASE: '' ? '' : ROOT,
+	CDN_BASE: '' ? '' : ROOT + 'static/',
+
+	LANG: 'zh-cn',
+	LANG_MAP: {
+		'en': 'en', 'zh-cn': 'zh-cn', 'zh-tw': 'zh-tw',
+		'en_US': 'en', 'zh_CN': 'zh-cn', 'zh_TW': 'zh-tw'
+	},
+	LANG_BACKEND_MAP: {
+		'en': 'en_US', 'zh-cn': 'zh_CN', 'zh-tw': 'zh_TW'
+	},
+
+	//pager setting
+	PAGE_ASIDE: 3,
+	ITEMS_PER_PAGE: 15,
+	BATCH_OP_REQUIRES: 3,
+	ONE_SCREEN_RECORDS: 10,
+	
+	pageTime: [new Date()]
+};
+
+G.IS_PROTOTYPE = G.CGI_BASE.indexOf('/static/mockup-data/') >= 0;
+
+if(G.LANG.indexOf('%{{') === 0) {
+	G.LANG = 'en';
+}
+
+if(G.DOMAIN) {
+	document.domain = G.DOMAIN;
+}
+
+G.THEME = (function() {
+	var m = document.cookie.match(/(?:^|;)\s*theme=([a-zA-Z0-9]+)/);
+	if(m) {
+		return m[1];
+	} else {
+		return 'purple';
+	}
+})();
+
+G.IS_PC = (function() {
+	var ua = navigator.userAgent;
+	var list = ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'BlackBerry', 'MeeGo', 'SymbianOS'];
+	for(var i = 0, l = list.length; i < l; i++) {
+		if(ua.indexOf(list[i]) > 0) {
+			return false;
+		}
+	}
+	return true;
+})();
+
+G.id = function(id) {
+	return document.getElementById(id);
+};
+
+document.write([
+	'<!--[if IE]><base href="' + G.ORIGIN + G.BASE + '"></base><![endif]--><!--[if !(IE)]><!--><base href="' + G.ORIGIN + G.BASE + '" /><!--<![endif]-->',
+	window.PROXY_PAGE ? '' : '<link rel="shortcut icon" href="favicon.ico" />',
+	window.PROXY_PAGE ? '' : '<link rel="stylesheet" href="' + G.CDN_ORIGIN + G.CDN_BASE + 'js/lib/bootstrap-3.0/less/bootstrap-' + G.THEME + '-main.css?max_age=30000000" />'
+].join(''));
+
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+(function() {
+	var cn = ' theme-' + G.THEME;
+	var m = document.cookie.match(/(?:^|;)\s*mf=([a-zA-Z0-9]+)/);
+	if(m && document.body.className.indexOf('full-screen-page') < 0) {
+		cn += ' menu-fixed';
+	}
+	document.body.className = document.body.className + cn;
+	document.documentElement.className = document.documentElement.className + (G.IS_PC ? ' is-pc' : ' is-mobile');
+})();
+
+
+
+
+</script>
+
+<div class="app-menu">
+	<div class="top"></div>
+	<div class="main-menu">
+		<!--
+		<ul>
+			<li id="nav-dashboard">
+				<a href="html/teacher/dashboard-en.html">
+					<span class="icon"><i class="icon-home"></i></span>
+					<span>${{common.label.dashboard}}$</span>
+				</a>
+			</li>
+			<li class="divider">Management</li>
+			<li id="nav-generate-pager">
+				<a href="#">
+					<span class="icon"><i class="icon-user"></i></span>
+					<span>${{common.label.generatePager}}$</span>
+				</a>
+			</li>
+			<li id="nav-view-grade">
+				<a href="#">
+					<span class="icon"><i class="icon-group"></i></span>
+					<span>${{common.label.viewGrade}}$</span>
+				</a>
+			</li>
+			<li id="nav-add-subject">
+				<a href="#">
+					<span class="icon"><i class="icon-user-md"></i></span>
+					<span>${{common.label.addSubject}}$</span>
+				</a>
+			</li>
+		</ul>
+	-->
+	</div>
+	<a class="handler" href="javascript:void(0);" data-rfl-click="fixAppMenu">
+		<i class="icon-lock"></i>
+		<i class="icon-unlock"></i>
+	</a>
+</div>
+<div class="app-top-bar">
+	<h1 class="pull-left">Intimate</h1>
+	<div class="menu-home icon pull-left">
+		<i class="icon-home"></i>
+		<i class="icon-angle-right"></i>
+	</div>
+	<div class="menu-home-cover"></div>
+	<div class="menu-handler icon pull-left" data-rfl-click="toggleAppMenu">
+		<i class="icon-reorder"></i>
+	</div>
+	<div class="search icon pull-left" data-rfl-click="toggleAppSearch">
+		<i class="icon-remove"></i>
+		<i class="icon-search"></i>
+	</div>
+	<div class="user pull-right" title="小苑" data-rfl-click="toggleAppUserMenu">
+		<i class="icon-remove"></i>
+		<span></span>
+	</div>
+</div>
+<div class="app-search-wrapper">
+	<div class="app-search"></div>
+</div>
+<div class="app-user-menu"></div>
+
+<div class="app-content-wrapper">
+	<div class="app-content" id="main-div">
+		<div class="ajax-loading"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+
+var require = require || {
+	debug: true,
+	baseUrl: G.CDN_ORIGIN + G.CDN_BASE + 'js/',
+	paths: {
+		'jquery': 'lib/jquery/jquery-1.9.1-main',
+		'bootstrap': 'lib/bootstrap-3.0/main',
+		'spine': 'lib/spine/main',
+		'rfl': 'lib/rfl/main',
+		'smart-search': 'lib/smart-search/main',
+		'form-util': 'lib/form-util/main',
+		'pair-box': 'lib/pair-box/main',
+		'auto-complete': 'lib/auto-complete/main',
+		'data-grid': 'lib/data-grid/main',
+		'customizable-data-grid': 'lib/customizable-data-grid/main',
+		'instant-editor': 'lib/instant-editor/main',
+		'file-uploader': 'lib/file-uploader/main',
+		'datepicker': 'lib/datepicker/main',
+		'timepicker': 'lib/timepicker/main',
+		'base64': 'lib/base64/main',
+		'raphael': 'lib/raphael/main',
+		'morris': 'lib/morris/main',
+		'codemirror': 'lib/codemirror/main',
+		'ckeditor': 'lib/ckeditor-4.2.1/ckeditor-main',
+		'just-gage': 'lib/just-gage/main',
+		'highcharts': 'lib/highcharts/main'
+	},
+	urlArgs: {
+		'jquery': 'max_age=30000000',
+		'spine': 'max_age=30000000',
+		'bootstrap': 'max_age=30000000',
+		'rfl': 'max_age=30000000',
+		'smart-search': 'max_age=30000000',
+		'form-util': 'max_age=30000000',
+		'pair-box': 'max_age=30000000',
+		'auto-complete': 'max_age=30000000',
+		'data-grid': 'max_age=30000000',
+		'customizable-data-grid': 'max_age=30000000',
+		'instant-editor': 'max_age=30000000',
+		'file-uploader': 'max_age=30000000',
+		'datepicker': 'max_age=30000000',
+		'timepicker': 'max_age=30000000',
+		'base64': 'max_age=30000000',
+		'raphael': 'max_age=30000000',
+		'morris': 'max_age=30000000',
+		'codemirror': 'max_age=30000000',
+		'ckeditor': 'max_age=30000000',
+		'highcharts': 'max_age=30000000'
+	},
+	shim: {
+		'jquery': {
+			exports: 'jQuery'
+		},
+		'spine': {
+			exports: 'Spine',
+			deps: ['jquery']
+		},
+		'bootstrap': {
+			exports: 'jQuery.fn.modal',
+			deps: ['jquery']
+		},
+		'datepicker': {
+			exports: 'jQuery.fn.datepicker',
+			deps: ['jquery']
+		},
+		'base64': {
+			exports: 'Base64'
+		},
+		'raphael': {
+			exports: 'Raphael'
+		},
+		'morris': {
+			exports: 'Morris',
+			deps: ['raphael']
+		},
+		'codemirror': {
+			exports: 'CodeMirror'
+		},
+		'ckeditor': {
+			exports: 'CKEDITOR'
+		},
+		'just-gage': {
+			exports: 'JustGage',
+			deps: ['raphael']
+		},
+		'highcharts': {
+			exports: 'jQuery.fn.highcharts',
+			deps: ['jquery']
+		}
+	},
+	onLoadStart: function() {
+		require(['rfl'], function(rfl) {
+			rfl.ajax.showLoading();	
+		});
+	},
+	onLoadEnd: function() {
+		require(['rfl'], function(rfl) {
+			rfl.ajax.hideLoading();	
+		});
+	},
+	errCallback: function() {
+		require(['rfl', 'lang/en/common'], function(rfl, langResource) {
+			rfl.alerts.show(langResource.msg.serverBusy, 'error');
+		}, function() {
+		});
+	}
+};
+
+
+</script>
+<script type="text/javascript">
+
+
+/**
+ * YOM module define and require lib 1.0
+ * Inspired by RequireJS AMD spec
+ * Copyright (c) 2012 Gary Wang, webyom@gmail.com http://webyom.org
+ * Under the MIT license
+ * https://github.com/webyom/yom
+ */
+var define, require
+
+;(function(global) {
+	if(require && require._YOM_) {
+		return
+	}
+
+	/**
+	 * utils
+	 */
+	var _head = document.head || document.getElementsByTagName('head')[0] || document.documentElement
+	var _isOpera = typeof opera !== 'undefined' && opera.toString() === '[object Opera]'
+	var _op = Object.prototype
+	var _ots = _op.toString
+
+	var _isArray = Array.isArray || function(obj) {
+		return _ots.call(obj) == '[object Array]'
+	}
+
+	function _getArray(arr) {
+		return Array.prototype.slice.call(arr)
+	}
+
+	function _isFunction(obj) {
+		return _ots.call(obj) == '[object Function]'
+	}
+
+	function _hasOwnProperty(obj, prop) {
+		return _op.hasOwnProperty.call(obj, prop)
+	}
+
+	function _trimTailSlash(path) {
+		return path.replace(/\/+$/, '')
+	}
+
+	function _each(arr, callback) {
+		for(var i = 0, l = arr.length; i < l; i++) {
+			callback(arr[i], i, arr)
+		}
+	}
+
+	function _extend(origin, extend, check) {
+		origin = origin || {}
+		for(var p in extend) {
+			if(_hasOwnProperty(extend, p) && (!check || typeof origin[p] == 'undefined')) {
+				origin[p] = extend[p]
+			}
+		}
+		return origin
+	}
+
+	function _clone(obj, deep, _level) {
+		var res = obj
+		deep = deep || 0
+		_level = _level || 0
+		if(_level > deep) {
+			return res
+		}
+		if(typeof obj == 'object' && obj) {
+			if(_isArray(obj)) {
+				res = []
+				_each(obj, function(item) {
+					res.push(item)
+				})
+			} else {
+				res = {}
+				for(var p in obj) {
+					if(_hasOwnProperty(obj, p)) {
+						res[p] = deep ? _clone(obj[p], deep, ++_level) : obj[p]
+					}
+				}
+			}
+		}
+		return res
+	}
+
+	function _getInteractiveScript() {
+		var script, scripts
+		scripts = document.getElementsByTagName('script')
+		for(var i = 0; i < scripts.length; i++) {
+			script = scripts[i]
+			if(script.readyState == 'interactive') {
+				return script
+			}
+		}
+		return script
+	}
+
+	function _getUrlParamObj(str) {
+		if(!str) {
+			return {}
+		}
+		var param = {}
+		var tmp = str.replace(/^[?#]/, '').split('&')
+		var i, item, key, val
+		for(i = 0; i < tmp.length; i++) {
+			item = tmp[i].split('=')
+			key = item[0]
+			val = decodeURIComponent(item[1] || '')
+			param[key] = val
+		}
+		return param
+	}
+
+	/**
+	 * config
+	 */
+	var _PAGE_BASE_URL = location.protocol + '//' + location.host + location.pathname.split('/').slice(0, -1).join('/')
+	var _RESERVED_NRM_ID = {
+		require: 1,
+		exports: 1,
+		module: 1,
+		global: 1,
+		domReady: 1
+	}
+	var _ERR_CODE = {
+		DEFAULT: 1,
+		TIMEOUT: 2,
+		LOAD_ERROR: 3,
+		NO_DEFINE: 4
+	}
+
+	var _DEFAULT_CONFIG = {
+		charset: 'utf-8',
+		baseUrl: '',
+		source: {},
+		paths: {},//match by id removed prefix
+		fallbacks: {},//match by id removed prefix
+		shim: {},//match by id removed prefix
+		enforceDefine: false,
+		urlArgs: {//match by id removed prefix
+			'*': ''//for all
+		},
+		//global
+		debug: false,
+		errCallback: null,
+		onLoadStart: null,
+		onLoadEnd: null,
+		waitSeconds: 30
+	}
+	_gcfg = _extendConfig(['debug', 'charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs', 'errCallback', 'onLoadStart', 'onLoadEnd', 'waitSeconds'], _clone(_DEFAULT_CONFIG, 1), typeof require == 'object' ? require : undefined)//global config
+	_gcfg.baseUrl = _getFullBaseUrl(_gcfg.baseUrl)
+	_gcfg.debug = !!_gcfg.debug || location.href.indexOf('yom-debug=1') > 0
+	var _interactiveMode = false
+	var _loadingCount = 0
+	var _scriptBeingInserted = null
+
+	var _hold = {}//loading or waiting dependencies
+	var _interactiveDefQueue = {}
+	var _defQueue = []
+	var _postDefQueue = []
+	var _defined = {}
+	var _plugin = {}
+	var _depReverseMap = {}
+
+	function Def(nrmId, baseUrl, exports, module, getter, loader) {
+		this._nrmId = nrmId
+		this._baseUrl = baseUrl
+		this._exports = exports
+		this._module = module
+		this._getter = getter
+		this._loader = loader
+		_defined[module.uri] = this
+	}
+
+	Def.prototype = {
+		getDef: function(context) {
+			if(this._getter) {
+				return this._getter(context)
+			} else {
+				return this._exports
+			}
+		},
+
+		getLoader: function() {
+			return this._loader
+		},
+
+		constructor: Def
+	}
+
+	new Def('require', _gcfg.baseUrl, {}, {id: 'require', uri: 'require'}, function(context) {
+		return _makeRequire({config: context.config, base: context.base})
+	})
+	new Def('exports', _gcfg.baseUrl, {}, {id: 'exports', uri: 'exports'}, function(context) {
+		return {}
+	})
+	new Def('module', _gcfg.baseUrl, {}, {id: 'module', uri: 'module'}, function(context) {
+		return {}
+	})
+	new Def('global', _gcfg.baseUrl, global, {id: 'global', uri: 'global'})
+	new Def('domReady', _gcfg.baseUrl, {}, {id: 'domReady', uri: 'domReady'}, function(context) {
+		return {}
+	}, (function() {
+		var _queue = []
+		var _checking = false
+		var _ready = false
+
+		function _onready() {
+			if(_ready) {
+				return
+			}
+			_ready = true
+			while(_queue.length) {
+				domReadyLoader.apply(null, _getArray(_queue.shift()))
+			}
+		}
+
+		function _onReadyStateChange() {
+			if(document.readyState == 'complete') {
+				_onready()
+			}
+		}
+
+		function _checkReady() {
+			if(_checking || _ready) {
+				return
+			}
+			_checking = true
+			if(document.readyState == 'complete') {
+				_onready()
+			} else if(document.addEventListener) {
+				document.addEventListener('DOMContentLoaded', _onready, false)
+				window.addEventListener('load', _onready, false)
+			} else {
+				document.attachEvent('onreadystatechange', _onReadyStateChange)
+				window.attachEvent('onload', _onready)
+			}
+		}
+
+		function domReadyLoader(context, onRequire) {
+			if(_ready) {
+				onRequire(0)
+			} else {
+				_queue.push(arguments)
+				_checkReady()
+			}
+		}
+
+		return domReadyLoader
+	})())
+
+	function Hold(id, nrmId, config) {
+		var baseUrl = config.baseUrl
+		var noPrefixId = _removeIdPrefix(id)
+		this._id = id
+		this._nrmId = nrmId
+		this._baseUrl = baseUrl
+		this._config = config
+		this._defineCalled = false
+		this._queue = []
+		this._fallbacks = config.fallbacks[noPrefixId]
+		this._shim = config.shim[noPrefixId]
+		this._uri = _getFullUrl(nrmId, baseUrl)
+		if(!_isArray(this._fallbacks)) {
+			this._fallbacks = [this._fallbacks]
+		}
+		_hold[this._uri] = this
+	}
+
+	Hold.prototype = {
+		push: function(onRequire) {
+			this._queue.push(onRequire)
+		},
+
+		defineCall: function() {
+			this._defineCalled = true
+		},
+
+		isDefineCalled: function() {
+			return this._defineCalled
+		},
+
+		remove: function() {
+			delete _hold[this._uri]
+		},
+
+		dispatch: function(errCode, opt) {
+			var callback
+			while(this._queue.length) {
+				callback = this._queue.shift()
+				if(callback) {
+					callback(errCode, opt || {uri: this._uri})
+				}
+			}
+		},
+
+		getConfig: function() {
+			return this._config
+		},
+
+		getShim: function() {
+			return this._shim
+		},
+
+		getFallback: function() {
+			return this._fallbacks.shift()
+		},
+
+		loadShimDeps: function(callback) {
+			var nrmId = this._nrmId
+			var config = this._config
+			var shim = this._shim
+			if(shim.deps) {
+				_makeRequire({config: config, base: {nrmId: nrmId, baseUrl: this._baseUrl}})(shim.deps, function() {
+					callback()
+				}, function(code) {
+					callback(code)
+				})
+			} else {
+				callback()
+			}
+		},
+
+		shimDefine: function() {
+			var hold = this
+			var nrmId = this._nrmId
+			var baseUrl = this._baseUrl
+			var config = this._config
+			var shim = this._shim
+			var exports
+			if(config.enforceDefine && !shim) {
+				return false
+			}
+			if(shim && shim.exports) {
+				exports = _getShimExports(shim.exports)
+				if(!exports) {
+					return false
+				}
+			}
+			_makeRequire({config: config, base: {nrmId: nrmId, baseUrl: baseUrl}})(shim && shim.deps || [], function() {
+				var args = _getArray(arguments)
+				if(shim && shim.init) {
+					exports = shim.init.apply(global, args) || exports
+				}
+				new Def(nrmId, baseUrl, exports, {id: nrmId, uri: _getFullUrl(nrmId, baseUrl)})
+				hold.dispatch(0)
+				hold.remove()
+			}, function(code, opt) {
+				hold.dispatch(code, opt)
+				hold.remove()
+			})
+			return true
+		},
+
+		constructor: Hold
+	}
+
+	function Plugin(name) {
+		this._name = name
+		_plugin[name] = this
+	}
+
+	Plugin.prototype = {
+		_paramsToken: '@',
+
+		_getResource: function(id) {
+			var res = _removePluginPrefix(id).split(this._paramsToken)
+			return res.slice(0, res.length - 1 || 1).join(this._paramsToken)
+		},
+
+		_getParams: function(id) {
+			var params = {}
+			var i, item
+			var tmp = id.split(this._paramsToken)
+			if(tmp.length < 2) {
+				return params
+			}
+			tmp = tmp.pop().split('&')
+			for(i = 0; i < tmp.length; i++) {
+				item = tmp[i].split('=')
+				params[item[0]] = item[1]
+			}
+			return params
+		},
+
+		require: function(id, config, callback, errCallback) {
+			if(callback) {
+				callback(this)
+			}
+			return this
+		},
+
+		constructor: Plugin
+	}
+
+	function _getHold(nrmId, baseUrl) {
+		var url = _getFullUrl(nrmId, baseUrl)
+		return _hold[url]
+	}
+
+	function _getDefined(id, nrmId, config) {
+		var def, shim, exports, module
+		var url = _getFullUrl(nrmId, config.baseUrl)
+		def = _defined[url]
+		if(!def) {
+			shim = config.shim[_removeIdPrefix(id)]
+			if(shim && shim.exports) {
+				exports = _getShimExports(shim.exports)
+				if(exports) {
+					module = {
+						id: nrmId,
+						uri: _getFullUrl(nrmId, config.baseUrl)
+					}
+					def = new Def(nrmId, config.baseUrl, exports, module)
+				}
+			}
+		}
+		return def
+	}
+
+	function _getPlugin(pluginName) {
+		return _plugin[pluginName]
+	}
+
+	function _getShimExports(name) {
+		var exports = global
+		name = name.split('.')
+		while(exports && name.length) {
+			exports = exports[name.shift()]
+		}
+		return exports
+	}
+
+	function _getInteractiveDefQueue(nrmId, baseUrl) {
+		var fullUrl = _getFullUrl(nrmId, baseUrl) || 'require'
+		_interactiveDefQueue[fullUrl] = _interactiveDefQueue[fullUrl] || {
+			defQueue: [], postDefQueue: []
+		}
+		return _interactiveDefQueue[fullUrl]
+	}
+
+	function _getDepReverseMap(url) {
+		var map = _depReverseMap[url] = _depReverseMap[url] || {}
+		return map
+	}
+
+	function _setDepReverseMap(url, depReverseUrl) {
+		var map = _getDepReverseMap(url)
+		map[depReverseUrl] = 1
+	}
+
+	function _hasCircularDep(depReverseUrl, url, _checkedUrls) {
+		var depMap = _getDepReverseMap(depReverseUrl)
+		var p
+		_checkedUrls = _checkedUrls || {}
+		if(_checkedUrls[depReverseUrl]) {
+			return false
+		}
+		if(url == depReverseUrl || depMap[url]) {
+			return true
+		}
+		_checkedUrls[depReverseUrl] = 1
+		for(p in depMap) {
+			if(!_hasOwnProperty(depMap, p)) {
+				continue
+			}
+			if(_hasCircularDep(p, url, _checkedUrls)) {
+				return true
+			}
+		}
+		return false
+	}
+
+	/**
+	 * id start width 'http:', 'https:', '/', or end with '.js' is unnormal
+	 */
+	function _isUnnormalId(id) {
+		return (/^https?:|^\/|.js$/).test(id)
+	}
+
+	function _isRelativePath(path) {
+		return (path + '').indexOf('.') === 0
+	}
+
+	function _removeIdPrefix(id) {
+		return id.replace(/^([a-zA-Z0-9_\-]+?!)?([a-zA-Z0-9_\-]+?#)?/, '')
+	}
+
+	function _removePluginPrefix(id) {
+		return id.replace(/^[a-zA-Z0-9_\-]+?!/, '')
+	}
+
+	function _getSourceName(id) {
+		var m = id.match(/^([^#]+?)#/)
+		return m && m[1] || ''
+	}
+
+	function _getPluginName(id) {
+		var m = id.match(/^([^!]+?)!/)
+		return m && m[1] || ''
+	}
+
+	function _normalizeId(id, base, paths) {
+		var nrmId, a, b, maped
+		if(!id) {
+			return id
+		}
+		id = _removeIdPrefix(id)//remove source or plugin prefix
+		if(_isUnnormalId(id)) {
+			return id
+		}
+		if(base && _isRelativePath(id)) {
+			if(_isUnnormalId(base.nrmId)) {
+				id += '.js'
+			}
+			return _resolvePath(base.nrmId, id)
+		} else {
+			nrmId = id
+		}
+		if(_isRelativePath(nrmId)) {
+			return nrmId
+		}
+		if(paths) {
+			a = nrmId.split('/')
+			b = []
+			while(a.length) {
+				maped = paths[a.join('/')]
+				if(maped) {
+					b.unshift(_trimTailSlash(maped))
+					return b.join('/')
+				}
+				b.unshift(a.pop())
+			}
+		}
+		return nrmId
+	}
+
+	function _extendConfig(props, config, ext) {
+		if(!config) {
+			return ext
+		} else if(!ext || config == ext || (props.length === 1 && props[0] == 'baseUrl' && config.baseUrl == ext.baseUrl)) {
+			return config
+		}
+		ext.baseUrl = _getFullBaseUrl(ext.baseUrl)
+		if(ext.baseUrl && config.baseUrl != ext.baseUrl) {
+			config = _clone(_DEFAULT_CONFIG, 1)
+		} else {
+			config = _clone(config, 1)
+		}
+		_each(props, function(p) {
+			config[p] = typeof config[p] == 'object' && typeof ext[p] == 'object' ? _extend(config[p], ext[p]) :
+					typeof ext[p] == 'undefined' ? config[p] : ext[p]
+		})
+		return config
+	}
+
+	function _getOrigin() {
+		return location.origin || location.protocol + '//' +  location.host
+	}
+
+	function _resolvePath(base, path) {
+		if(!_isRelativePath(path)) {
+			return path
+		}
+		var bArr = base.split('/'),
+			pArr = path.split('/'),
+			part
+		bArr.pop()
+		while(pArr.length) {
+			part = pArr.shift()
+			if(part == '..') {
+				if(bArr.length) {
+					part = bArr.pop()
+					while(part == '.') {
+						part = bArr.pop()
+					}
+					if(part == '..') {
+						bArr.push('..', '..')
+					}
+				} else {
+					bArr.push(part)
+				}
+			} else if(part != '.') {
+				bArr.push(part)
+			}
+		}
+		path = bArr.join('/')
+		return path
+	}
+
+	function _getFullBaseUrl(url) {
+		if(url) {
+			if(url.indexOf('://') < 0) {
+				if(url.indexOf('/') === 0) {
+					url = _getOrigin() + _trimTailSlash(url)
+				} else {
+					url = _getOrigin() + _resolvePath(location.pathname, _trimTailSlash(url))
+				}
+			} else {
+				url = _trimTailSlash(url)
+			}
+		}
+		return url
+	}
+
+	function _getFullUrl(nrmId, baseUrl) {
+		var url = ''
+		baseUrl = baseUrl || _gcfg.baseUrl
+		if(_RESERVED_NRM_ID[nrmId] || _isUnnormalId(nrmId)) {
+			url = nrmId
+		} else if(nrmId && _isRelativePath(nrmId)) {
+			url = _resolvePath(baseUrl + '/', nrmId) + '.js'
+		} else if(nrmId) {
+			url = baseUrl + '/' + nrmId + '.js'
+		}
+		return url
+	}
+
+	function _getUrlArg(id, urlArgs) {
+		return urlArgs && (urlArgs[_removeIdPrefix(id)] || urlArgs['*']) || ''
+	}
+
+	function _getCharset(id, charset) {
+		if(typeof charset == 'string') {
+			return charset
+		} else {
+			return charset && (charset[_removeIdPrefix(id)] || charset['*']) || ''
+		}
+	}
+
+	function _endLoad(jsNode, onload, onerror) {
+		_loadingCount--
+		if(jsNode.attachEvent && !_isOpera) {
+			jsNode.detachEvent('onreadystatechange', onload)
+		} else {
+			jsNode.removeEventListener('load', onload, false)
+			jsNode.removeEventListener('error', onerror, false)
+		}
+		jsNode.parentNode.removeChild(jsNode)
+		if(_loadingCount === 0 && _gcfg.onLoadStart) {
+			try {
+				_gcfg.onLoadEnd()
+			} catch(e) {
+				if(_gcfg.debug) {
+					throw e
+				}
+			}
+		}
+	}
+
+	function _dealError(code, opt, errCallback) {
+		opt = opt || {}
+		if(errCallback) {
+			errCallback(code, opt)
+		} else if(_gcfg.errCallback) {
+			_gcfg.errCallback(code, opt)
+		} else {
+			if(opt.uri) {
+				throw new Error('Failed to load ' + opt.uri)
+			} else {
+				throw new Error('Load Error')
+			}
+		}
+	}
+
+	function _loadPlugin(pluginName, id, config, onRequire) {
+		require(['require-plugin/' + pluginName], function(pluginDef) {
+			var plugin = _plugin[pluginName]
+			if(!plugin) {
+				if(pluginDef.factory) {
+					plugin = _plugin[pluginName] = pluginDef.factory(Plugin)
+				} else {
+					plugin = _plugin[pluginName] = _extend(new Plugin(pluginName), pluginDef)
+				}
+			}
+			plugin.require(id, config, function(res) {
+				onRequire(0)
+			}, function(errCode, opt) {
+				onRequire(errCode, opt)
+			})
+		}, function(errCode, opt) {
+			onRequire(errCode, opt)
+		})
+	}
+
+	function _doLoad(id, nrmId, config, hold) {
+		var combo, comboUrl, baseUrl, charset, jsNode, urlArg
+		combo = typeof id == 'object' && id && id.combo && id
+		if(combo) {
+			comboUrl = nrmId
+			id = combo.id
+			nrmId = combo.nrmId
+		}
+		baseUrl = config.baseUrl
+		charset = _getCharset(id, config.charset)
+		jsNode = document.createElement('script')
+		if(jsNode.attachEvent && !_isOpera) {
+			_interactiveMode = true
+			jsNode.attachEvent('onreadystatechange', _ieOnload)
+		} else {
+			jsNode.addEventListener('load', _onload, false)
+			jsNode.addEventListener('error', _onerror, false)
+		}
+		if(charset) {
+			jsNode.charset = charset
+		}
+		jsNode.type = 'text/javascript'
+		jsNode.async = 'async'
+		urlArg = _getUrlArg(id, config.urlArgs)
+		jsNode.src = (comboUrl || _getFullUrl(nrmId, baseUrl)) + (urlArg ? '?' + urlArg : '')
+		jsNode.setAttribute('data-nrm-id', nrmId)
+		jsNode.setAttribute('data-base-url', baseUrl)
+		_scriptBeingInserted = jsNode
+		_head.insertBefore(jsNode, _head.firstChild)
+		_scriptBeingInserted = null
+		_loadingCount++
+		if(_loadingCount === 1 && _gcfg.onLoadStart) {
+			try {
+				_gcfg.onLoadStart()
+			} catch(e) {
+				if(_gcfg.debug) {
+					throw e
+				}
+			}
+		}
+		function _ieOnload() {
+			var fallback
+			if(jsNode && (jsNode.readyState == 'loaded' || jsNode.readyState == 'complete')) {
+				_endLoad(jsNode, _ieOnload)
+				jsNode = null
+				_processDefQueue(nrmId, baseUrl, config, combo)
+				if(!hold.isDefineCalled() && !hold.shimDefine()) {
+					fallback = hold.getFallback()
+					if(fallback) {
+						_doLoad(id, fallback, config, hold)
+					} else {
+						hold.dispatch(_ERR_CODE.NO_DEFINE)
+						hold.remove()
+					}
+				}
+			}
+		}
+		function _onload() {
+			var def, fallback
+			_endLoad(jsNode, _onload, _onerror)
+			_processDefQueue(nrmId, baseUrl, config, combo)
+			if(!hold.isDefineCalled() && !hold.shimDefine()) {
+				fallback = hold.getFallback()
+				if(fallback) {
+					_doLoad(id, fallback, config, hold)
+				} else {
+					hold.dispatch(_ERR_CODE.NO_DEFINE)
+					hold.remove()
+				}
+			}
+		}
+		function _onerror() {
+			var fallback = hold.getFallback()
+			_endLoad(jsNode, _onload, _onerror)
+			if(fallback) {
+				_doLoad(id, fallback, config, hold)
+			} else {
+				hold.dispatch(_ERR_CODE.NO_DEFINE)
+				hold.remove()
+			}
+		}
+	}
+
+	function _load(id, nrmId, config, onRequire) {
+		var combo = typeof id == 'object' && id && id.combo && id,
+			baseUrl = config.baseUrl,
+			jsNode, urlArg
+		var def, hold, comboUrl, comboHold
+		var comboNeedLoad = false
+		if(combo) {
+			comboUrl = nrmId
+			id = combo.id
+			nrmId = combo.nrmId
+			hold = _getHold(combo.nrmId, baseUrl)
+		} else {
+			def = _getDefined(id, nrmId, config)
+			hold = _getHold(nrmId, baseUrl)
+		}
+		if(def) {
+			onRequire(0)
+			return
+		} else if(hold) {
+			hold.push(onRequire)
+			return
+		}
+		hold = new Hold(id, nrmId, config)
+		hold.push(onRequire)
+		if(combo) {
+			comboHold = hold
+			_each(combo.load, function(item, i) {
+				var hold = _getHold(item.nrmId, baseUrl)
+				if(!hold) {
+					hold = new Hold(item.id, item.nrmId, config)
+					comboNeedLoad = true
+				}
+				hold.push(function (err, opt) {
+					if(err) {
+						comboHold.dispatch(err)
+					} else {
+						combo.loadCount++
+						if(combo.loadCount === combo.postLoadList.length) {
+							comboHold.defineCall()
+							comboHold.dispatch(0)
+						}
+					}
+				})
+			})
+			comboNeedLoad && _doLoad(combo, comboUrl, config, hold)
+		} else {
+			if(hold.getShim()) {
+				hold.loadShimDeps(function(errCode) {
+					if(errCode) {
+						hold.dispatch(errCode)
+						hold.remove()
+					} else {
+						_doLoad(id, nrmId, config, hold)
+					}
+				})
+			} else {
+				_doLoad(id, nrmId, config, hold)
+			}
+		}
+	}
+
+	function _processDefQueue(nrmId, baseUrl, config, combo) {
+		var def, queue, defQueue, postDefQueue
+		if(_interactiveMode) {
+			queue = _getInteractiveDefQueue(nrmId, baseUrl)
+			defQueue = queue['defQueue']
+			postDefQueue = queue['postDefQueue']
+		} else {
+			defQueue = _defQueue
+			postDefQueue = _postDefQueue
+		}
+		def = defQueue.shift()
+		while(def) {
+			_defineCall(def.id, def.deps, def.factory, {
+				nrmId: nrmId || def.id,
+				baseUrl: baseUrl || def.config && def.config.baseUrl || config && config.baseUrl || _gcfg.baseUrl,
+				config: config
+			}, def.config, postDefQueue, combo)
+			def = defQueue.shift()
+		}
+		def = postDefQueue.shift()
+		while(def) {
+			_postDefineCall(def.base, def.deps, def.factory, def.hold, def.config)
+			def = postDefQueue.shift()
+		}
+	}
+
+	/**
+	 * define
+	 */
+	function _defineCall(id, deps, factory, loadInfo, config, postDefQueue, combo) {
+		var nrmId, conf, loadHold, hold, depMap
+		var baseUrl = loadInfo.baseUrl
+		var baseConfig = loadInfo.config || config
+		config = _extendConfig(['charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs'], baseConfig, config)
+		loadHold = _getHold(loadInfo.nrmId, baseUrl)
+		if(combo) {
+			loadInfo.nrmId = combo.load[0].nrmId
+			nrmId = _normalizeId(id, loadInfo, config.paths)
+			if(!nrmId || nrmId == loadInfo.nrmId) {
+				nrmId = combo.load.shift()//process the first load item
+				combo.postLoadList.push(nrmId)//then push is to the processed list
+				nrmId = nrmId.nrmId
+				hold = _getHold(nrmId, baseUrl)
+				hold.defineCall()
+				if(!combo.load.length) {//all the load items have been loaded
+					loadHold.defineCall()
+				}
+			} else {//multiple define in a file
+				hold = new Hold(id, nrmId, baseConfig)
+				hold.defineCall()
+			}
+		} else {
+			if(id == loadInfo.nrmId) {//html built in module
+				nrmId = loadInfo.nrmId
+			} else {
+				nrmId = _normalizeId(id, loadInfo, config.paths)
+			}
+			if((!nrmId || nrmId == loadInfo.nrmId) && loadHold) {
+				nrmId = loadInfo.nrmId
+				hold = loadHold
+				hold.defineCall()
+			} else {//multiple define in a file
+				hold = new Hold(id, nrmId, baseConfig)
+				hold.defineCall()
+			}
+		}
+		postDefQueue.push({
+			base: {
+				nrmId: nrmId,
+				baseUrl: baseUrl,
+				config: baseConfig
+			},
+			deps: deps,
+			factory: factory,
+			hold: hold,
+			config: config
+		})
+	}
+
+	function _postDefineCall(base, deps, factory, hold, config) {
+		_makeRequire({config: config, base: base})(deps, function() {
+			var nrmId
+			if(!base.baseUrl && (/^require-plugin\//).test(base.nrmId)) {//require-plugin builtin with html
+				nrmId = _normalizeId(base.nrmId, base, config.paths)
+			} else {
+				nrmId = base.nrmId
+			}
+			var baseUrl = base.baseUrl || config.baseUrl
+			var exports, module, factoryRes
+			var args = _getArray(arguments)
+			module = {
+				id: nrmId,
+				uri: _getFullUrl(nrmId, baseUrl)
+			}
+			if(deps[2] == 'module') {
+				args[2] = module
+			}
+			if(_isFunction(factory)) {
+				if(deps[1] == 'exports') {
+					exports = module.exports = args[1] = {}
+				}
+				exports = factory.apply(null, args) || module.exports
+			} else {
+				exports = factory
+			}
+			module.exports = exports
+			new Def(nrmId, baseUrl, exports, module)
+			hold.dispatch(0)
+			hold.remove()
+		}, function(code, opt) {
+			hold.dispatch(code, opt)
+			hold.remove()
+		})
+	}
+
+	function _makeDefine(context) {
+		var config
+		context = context || {}
+		context.parentConfig = context.parentConfig || _gcfg
+		config = _extendConfig(['charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs'], context.parentConfig, context.config)
+		function def(id, deps, factory) {
+			var script, factoryStr, reqFnName, defQueue
+			if(typeof id != 'string') {
+				factory = deps
+				deps = id
+				id = ''
+			}
+			if(typeof factory == 'undefined' || !_isArray(deps)) {
+				factory = deps
+				deps = []
+			}
+			if(!deps.length && _isFunction(factory) && factory.length) {
+				factoryStr = factory.toString()
+				reqFnName = factoryStr.match(/^function[^\(]*\(([^\)]+)\)/) || ['', 'require']
+				reqFnName = (reqFnName[1].split(',')[0]).replace(/\s/g, '')
+				factoryStr.replace(new RegExp('(?:^|[^\\.\\/\\w])' + reqFnName + '\\s*\\(\\s*(["\'])([^"\']+?)\\1\\s*\\)', 'g'), function(full, quote, dep) {//extract dependencies
+						deps.push(dep)
+					})
+				deps = (factory.length === 1 ? ['require'] : ['require', 'exports', 'module']).concat(deps)
+			}
+			if(_interactiveMode) {
+				script = _scriptBeingInserted || _getInteractiveScript()
+				if(script) {
+					defQueue = _getInteractiveDefQueue(script.getAttribute('data-nrm-id'), script.getAttribute('data-base-url'))['defQueue']
+				}
+			} else {
+				defQueue = _defQueue
+			}
+			defQueue.push({
+				id: id,
+				deps: deps,
+				factory: factory,
+				config: config
+			})
+			return def
+		}
+		def.config = function(conf) {
+			config = _extendConfig(['debug', 'charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs', 'errCallback', 'onLoadStart', 'onLoadEnd', 'waitSeconds'], config, conf)
+			return def
+		}
+		def.extend = function(conf) {
+			return _makeDefine({config: conf, parentConfig: config})
+		}
+		return def
+	}
+
+	define = _makeDefine()
+	define._ROOT_ = true
+	define.amd = {
+
+	}
+
+	/**
+	 * require
+	 */
+	function _getComboUrl(loadList, baseUrl) {
+		var combo = []
+		var comboUrl
+		var hostName = baseUrl.split('/').slice(0, 3).join('/')
+		_each(loadList, function(item, i) {
+			baseUrl = item.config.baseUrl
+			var hostName = baseUrl.split('/').slice(0, 3).join('/')
+			var base = baseUrl.slice(hostName.length)
+			if(_isUnnormalId(item.nrmId)) {
+				combo.push(base + item.nrmId)
+			} else {
+				combo.push(base + '/' + item.nrmId + '.js')
+			}
+		})
+		comboUrl = hostName + '/c/=' + combo.join(',')
+		return comboUrl
+	}
+
+	function _loadCombo(combo, config, context, callback) {
+		var callArgs = combo.combo
+		var baseUrl = config.baseUrl
+		var hold, comboUrl
+		hold = _getHold(combo.nrmId, baseUrl)
+		if(hold) {
+			hold.push(onRequire)
+		} else {
+			_load(combo, _getComboUrl(combo.load, baseUrl), config, onRequire)
+		}
+		function onRequire(errCode, opt) {
+			if(!errCode) {
+				_each(callArgs, function(arg, i) {
+					var def, plugin
+					if(typeof arg == 'undefined') {
+						arg = combo.postLoadList.shift()
+						def = _getDefined(arg.id, arg.nrmId, arg.config)
+						callArgs[i] = def.getDef(context)
+					}
+				})
+			}
+			callback(errCode, opt)
+		}
+	}
+
+	function _getDep(id, config, context) {
+		var base, conf, nrmId, def, pluginName, sourceConf, fullUrl, baseFullUrl, loader
+		if(!id) {
+			return {}
+		}
+		pluginName = _getPluginName(id)
+		if(pluginName) {
+			return {plugin: _getPlugin(pluginName), load: {pluginName: pluginName, id: id, nrmId: id, config: config}}
+		}
+		def = _defined[id]
+		if(def) {//reserved
+			loader = def.getLoader()
+			if(loader) {
+				return {inst: def, load: {loader: loader, id: id, nrmId: id, config: config}}
+			} else {
+				return {inst: def}
+			}
+		}
+		sourceConf = config.source[_getSourceName(id)]
+		conf = _extendConfig(['charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs'], config, sourceConf)
+		base = context.base
+		nrmId = _normalizeId(id, base, conf.paths)
+		if(_isRelativePath(id)) {
+			conf = base && base.config || conf
+		}
+		def = _getDefined(id, nrmId, conf)
+		fullUrl = _getFullUrl(nrmId, conf.baseUrl)
+		if(base) {
+			baseFullUrl = _getFullUrl(base.nrmId, base.baseUrl)
+			_setDepReverseMap(fullUrl, baseFullUrl)
+			if(!def && _hasCircularDep(baseFullUrl, fullUrl)) {//cirular dependency
+				return {}
+			}
+		}
+		if(def) {
+			return {inst: def}
+		} else {
+			return {load: {id: id, nrmId: nrmId, config: conf}}
+		}
+	}
+
+	function _makeRequire(context) {
+		var config
+		context = context || {}
+		context.parentConfig = context.parentConfig || _gcfg
+		config = _extendConfig(['charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs'], context.parentConfig, context.config)
+		function req(deps, callback, errCallback) {
+			var over = false
+			var loadList = []
+			var def, count, callArgs, toRef
+			if(typeof deps == 'string') {
+				if(arguments.length === 1) {
+					def = _getDep(deps, config, context)
+					if(def.plugin) {
+						return def.plugin.require(deps, config)
+					} else {
+						return def.inst && def.inst.getDef(context)
+					}
+				} else {
+					throw new Error('Wrong arguments for require.')
+				}
+			}
+			callArgs = new Array(deps.length)
+			_each(deps, function(id, i) {
+				var def, combo, comboIds
+				if(id.indexOf('combine:') === 0) {
+					id = id.replace(/\s+/g, '')
+					comboIds = id.replace(/^combine:/, '').split(',')
+					combo = {
+						id: id,
+						nrmId: id,
+						combo: new Array(comboIds.length),//combo module definitions
+						load: [],//need to be loaded
+						loadCount: 0,//loaded count
+						postLoadList: []//loaded items
+					}
+					_each(comboIds, function(id, i) {
+						def = _getDep(id, config, context)
+						if(def.load) {
+							combo.load.push(def.load)
+						} else if(def.inst) {
+							combo.combo[i] = def.inst.getDef(context)
+						} else {
+							combo.combo[i] = null
+						}
+					})
+					if(combo.load.length) {
+						loadList.push(combo)
+					} else {
+						callArgs[i] = combo.combo
+					}
+				} else {
+					def = _getDep(id, config, context)
+					if(def.load) {
+						loadList.push(def.load)
+					} else if(def.inst) {
+						callArgs[i] = def.inst.getDef(context)
+					} else {
+						callArgs[i] = null
+					}
+				}
+			})
+			count = loadList.length
+			if(count) {
+				if(!context.base) {
+					toRef = setTimeout(function() {
+						if(over) {
+							return
+						}
+						over = true
+						_dealError(_ERR_CODE.TIMEOUT, errCallback)
+					}, config.waitSeconds * 1000)
+				}
+				_each(loadList, function(item, i) {
+					var hold
+					if(item.combo) {//combine
+						_loadCombo(item, config, context, onRequire)
+					} else if(item.loader) {//reserved module loader
+						item.loader(context, onRequire)
+					} else if(item.pluginName) {//plugin
+						_loadPlugin(item.pluginName, item.id, item.config, onRequire)
+					} else {
+						hold = _getHold(item.nrmId, item.config.baseUrl)
+						if(hold) {
+							hold.push(onRequire)
+						} else {
+							_load(item.id, item.nrmId, item.config, onRequire)
+						}
+					}
+				})
+			} else {
+				callback && callback.apply(null, callArgs)
+			}
+			function onRequire(errCode, opt) {
+				if(over) {
+					return
+				}
+				if(errCode) {
+					over = true
+					clearTimeout(toRef)
+					if(context.base) {
+						_dealError(errCode, opt, errCallback)
+					} else {
+						try {
+							_dealError(errCode, opt, errCallback)
+						} catch(e) {
+							if(_gcfg.debug) {
+								throw e
+							}
+						}
+					}
+				} else {
+					count--
+					if(count <= 0) {
+						over = true
+						clearTimeout(toRef)
+						if(callback) {
+							_each(callArgs, function(arg, i) {
+								var def, plugin
+								if(typeof arg == 'undefined') {
+									arg = loadList.shift()
+									if(arg.combo) {//combine
+										callArgs[i] = arg.combo
+									} else if(arg.pluginName) {//plugin
+										plugin = _getPlugin(arg.pluginName)
+										callArgs[i] = plugin.require(arg.id, config)
+									} else {
+										def = _getDefined(arg.id, arg.nrmId, arg.config)
+										callArgs[i] = def.getDef(context)
+									}
+								}
+							})
+							if(context.base) {
+								callback.apply(null, callArgs)
+							} else {
+								try {
+									callback.apply(null, callArgs)
+								} catch(e) {
+									if(_gcfg.debug) {
+										throw e
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			return req
+		}
+		req.config = function(conf) {
+			config = _extendConfig(['debug', 'charset', 'baseUrl', 'source', 'paths', 'fallbacks', 'shim', 'enforceDefine', 'urlArgs', 'errCallback', 'onLoadStart', 'onLoadEnd', 'waitSeconds'], config, conf)
+			if(req._ROOT_) {
+				_gcfg = config
+				define.config(conf)
+			}
+			return req
+		}
+		req.extend = function(conf) {
+			return _makeRequire({config: conf, parentConfig: config})
+		}
+		req.getConfig = function(key) {
+			if(key) {
+				return config[key]
+			}
+			return config
+		}
+		req.toUrl = function(url, onlyPath) {
+			if(context.base) {
+				url = _resolvePath(_getFullUrl(context.base.nrmId, context.base.baseUrl), url)
+			} else {
+				url = _resolvePath(config.baseUrl + '/', url)
+			}
+			if(onlyPath) {
+				url = url.replace(/^https?:\/\/[^\/]*?\//, '/')
+			}
+			return url
+		}
+		req.ERR_CODE = _ERR_CODE
+		return req
+	}
+
+	require = _makeRequire()
+
+	require._YOM_ = true
+	require._ROOT_ = true
+	require.PAGE_BASE_URL = _PAGE_BASE_URL
+	//for modules built with require.js or html builtin
+	require.processDefQueue = _processDefQueue
+	//for modules built with require.js or html builtin
+	require.getBaseUrlConfig = function(baseUrl) {
+		return _extendConfig(['baseUrl'], _gcfg, {baseUrl: baseUrl || _PAGE_BASE_URL})
+	}
+	//debug
+	require._debug = {
+		interactiveDefQueue: _interactiveDefQueue,
+		defQueue: _defQueue,
+		postDefQueue: _postDefQueue,
+		hold: _hold,
+		defined: _defined,
+		plugin: _plugin,
+		depReverseMap: _depReverseMap
+	}
+
+	;(function() {
+		var scripts, script, i, main, baseUrl
+		scripts = document.getElementsByTagName('script')
+		for(i = scripts.length - 1; i >= 0; i--) {
+			script = scripts[i]
+			main = script.getAttribute('data-main')
+			if(main) {
+				baseUrl = script.getAttribute('data-base-url')
+				if(baseUrl) {
+					_gcfg.baseUrl = _getFullBaseUrl(baseUrl)
+				} else if(!_gcfg.baseUrl) {
+					if(_isUnnormalId(main)) {
+						_gcfg.baseUrl = _getFullBaseUrl(main.split('/').slice(0, -1).join('/'))
+					} else {
+						_gcfg.baseUrl = _PAGE_BASE_URL
+					}
+				}
+				require([main], function(main) {
+					if(_isFunction(main.init)) {
+						main.init(_getUrlParamObj(script.getAttribute('data-param')))
+					}
+				})
+				return
+			}
+		}
+		if(!_gcfg.baseUrl) {
+			_gcfg.baseUrl = _PAGE_BASE_URL
+		}
+	})()
+})(this)
+
+
+
+</script>
+<script type="text/javascript">
+
+
+/**
+ * YOM require jsonp plugin
+ */
+define('require-plugin/jsonp', ['global'], function(global) {
+	var _ERROR_OBJ = {}
+	
+	var _head = document.head || document.getElementsByTagName('head')[0] || document.documentElement
+	var _isOpera = typeof opera !== 'undefined' && opera.toString() === '[object Opera]'
+	var _callbackHolder = {}
+	var _callbackAll = {}
+	var _interactiveMode = false
+	var _scriptBeingInserted = null
+	var _cache = {}
+	var _queue = {}
+	var _count = 0
+	
+	var CallbackHolder = function(name) {
+		var self = this
+		this._name = name
+		this._callbackArgs = CallbackHolder.NOT_CALLBACKED
+		global[name] = function() {
+			return self._callback.apply(self, _getArray(arguments))
+		}
+	}
+	
+	CallbackHolder.NOT_CALLBACKED = new Object()
+	
+	CallbackHolder.prototype._callback = function() {
+		var script, loaderId, callback
+		if(_interactiveMode) {
+			script = _scriptBeingInserted || _getInteractiveScript()
+			if(script) {
+				loaderId = script.getAttribute('data-require-jsonp-id')
+				if(loaderId) {
+					callback = _callbackAll[loaderId]
+					callback && callback.apply(null, _getArray(arguments))
+				}
+			}
+		} else {
+			this._callbackArgs = arguments
+		}
+	}
+	
+	CallbackHolder.prototype.getCallbackArgs = function() {
+		var res = this._callbackArgs
+		this._callbackArgs = CallbackHolder.NOT_CALLBACKED
+		return res
+	}
+	
+	function _getArray(arr) {
+		return Array.prototype.slice.call(arr)
+	}
+	
+	function _getInteractiveScript() {
+		var script, scripts
+		scripts = document.getElementsByTagName('script')
+		for(var i = 0; i < scripts.length; i++) {
+			script = scripts[i]
+			if(script.readyState == 'interactive') {
+				return script
+			}
+		}
+		return script
+	}
+	
+	function _clearJsonp(jsEl, callbackName, onload, onerror) {
+		if(jsEl.addEventListener)  {
+			jsEl.removeEventListener('load', onload, false)
+			jsEl.removeEventListener('error', onerror, false)
+		} else {
+			jsEl.detachEvent('onreadystatechange', onload)
+		}
+		jsEl.parentNode.removeChild(jsEl)
+	}
+	
+	function _loadJsonp(url, callback, callbackName, charset) {
+		var id = 'REQUIRE_JSONP_' + (_count++)
+		var callbacked = false
+		var _callback = _callbackAll[id] = function() {
+			delete _callbackAll[id]
+			callbacked = true
+			callback.apply(null, _getArray(arguments))
+		}
+		_callbackHolder[callbackName] = _callbackHolder[callbackName] || new CallbackHolder(callbackName)
+		function onload() {
+			_clearJsonp(jsEl, callbackName, onload, onerror)
+			var callbackArgs = _callbackHolder[callbackName].getCallbackArgs()
+			if(callbackArgs == CallbackHolder.NOT_CALLBACKED) {
+				callback(null, _ERROR_OBJ)
+			} else {
+				_callback.apply(null, _getArray(callbackArgs))
+			}
+		}
+		function onerror() {
+			_clearJsonp(jsEl, callbackName, onload, onerror)
+			callback(null, _ERROR_OBJ)
+		}
+		function ieOnload() {
+			if(jsEl && (jsEl.readyState == 'loaded' || jsEl.readyState == 'complete')) {
+				_clearJsonp(jsEl, callbackName, ieOnload)
+				jsEl = null
+				if(!callbacked) {
+					callback(null, _ERROR_OBJ)
+				}
+			}
+		}
+		var jsEl = document.createElement('script')
+		if(jsEl.attachEvent && !_isOpera) {
+			_interactiveMode = true
+			jsEl.attachEvent('onreadystatechange', ieOnload)
+		} else {
+			jsEl.addEventListener('load', onload, false)
+			jsEl.addEventListener('error', onerror, false)
+		}
+		jsEl.charset = charset
+		jsEl.type = 'text/javascript'
+		jsEl.async = 'async'
+		jsEl.src = url
+		jsEl.setAttribute('data-require-jsonp-id', id)
+		_scriptBeingInserted = jsEl
+		jsEl = _head.insertBefore(jsEl, _head.firstChild)
+		_scriptBeingInserted = null
+	}
+	
+	function req(id, config, callback, errCallback) {
+		var url = this._getResource(id)
+		var params, callbackName, charset, queue
+		if(callback) {
+			if(url) {
+				params = this._getParams(id)
+				if(!params['noCache'] && _cache[url]) {
+					callback(_cache[url])
+				} else if(!params['noCache'] && _queue[url]) {
+					_queue[url].push({callback: callback, errCallback: errCallback});
+				} else {
+					queue = _queue[url] = _queue[url] || [];
+					queue.push({callback: callback, errCallback: errCallback});
+					callbackName = params['callbackName'] || 'callback'
+					charset = params['charset'] || 'utf-8'
+					_loadJsonp(url, function(data, err) {
+						if(err === _ERROR_OBJ) {
+							while(queue.length) {
+								errCallback = queue.shift().errCallback
+								errCallback && errCallback(require.ERR_CODE.LOAD_ERROR, {uri: url})
+							}
+						} else {
+							_cache[url] = data
+							while(queue.length) {
+								queue.shift().callback(data);
+							}
+						}
+					}, callbackName, charset)
+				}
+			} else {
+				callback(this)
+			}
+		}
+		return url && _cache[url] || this
+	}
+	
+	return {
+		require: req
+	}
+})
+
+
+require.processDefQueue()
+
+
+</script>
+<script type="text/javascript">
+
+
+/**
+ * YOM require ajax plugin
+ */
+define('require-plugin/ajax', ['global'], function(global) {
+	var _ERROR_OBJ = {}
+	
+	var _cache = {}
+	var _queue = {}
+	
+	function _loadXhr(url, callback, opt) {
+		var xhr
+		try {
+			xhr = new XMLHttpRequest()
+		} catch(e) {
+			xhr = new ActiveXObject('MSXML2.XMLHTTP')
+		}
+		xhr.open('GET', url, true)
+		xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+		if(opt.noCache) {
+			xhr.setRequestHeader('If-Modified-Since', 'Sun, 27 Mar 1983 00:00:00 GMT')
+			xhr.setRequestHeader('Cache-Control', 'no-cache')
+		}
+		if(opt.withCredentials) {
+			xhr.withCredentials = true
+		}
+		xhr.onreadystatechange = function() {
+			var res
+			if(xhr.readyState !== 4) {
+				return
+			}
+			if(xhr.status >= 200 && xhr.status < 300) {
+				try {
+					res = eval('(' + xhr.responseText + ')')
+				} catch(e) {
+					if(require.debug) {
+						throw e
+					} else {
+						callback(null, _ERROR_OBJ)
+					}
+				}
+				callback(res)
+			} else {
+				callback(null, _ERROR_OBJ)
+			}
+		}
+		xhr.send()
+	};
+	
+	function req(id, config, callback, errCallback) {
+		var url = this._getResource(id)
+		var params, queue
+		if(callback) {
+			if(url) {
+				params = this._getParams(id)
+				if(params['dataType'] == 'jsonp' || params['dataType'] != 'json' && url.indexOf(location.protocol + '//' + location.host + '/') !== 0) {
+					require([id.replace(/^ajax/, 'jsonp')], function(data) {
+						_cache[url] = data
+						callback(data)
+					}, function(err, info) {
+						errCallback && errCallback(err, info)
+					})
+				} else {
+					if(!params['noCache'] && _cache[url]) {
+						callback(_cache[url])
+					} else if(!params['noCache'] && _queue[url]) {
+						_queue[url].push({callback: callback, errCallback: errCallback});
+					} else {
+						queue = _queue[url] = _queue[url] || [];
+						queue.push({callback: callback, errCallback: errCallback});
+						_loadXhr(url, function(data, err) {
+							if(err === _ERROR_OBJ) {
+								while(queue.length) {
+									errCallback = queue.shift().errCallback
+									errCallback && errCallback(require.ERR_CODE.LOAD_ERROR, {uri: url})
+								}
+							} else {
+								_cache[url] = data
+								while(queue.length) {
+									queue.shift().callback(data);
+								}
+							}
+						}, {
+							noCache: !!params['noCache'],
+							withCredentials: !!params['withCredentials']
+						})
+					}
+				}
+			} else {
+				callback(this)
+			}
+		}
+		return url && _cache[url] || this
+	}
+	
+	return {
+		require: req
+	}
+})
+
+require.processDefQueue()
+
+
+</script>
+<script type="text/javascript">
+
+
+define('../../js/lang/en/common', ['require', 'exports', 'module'], {
+	appName: 'Radica Intimate 4',
+	copyright: 'Radica Systems Limited 2013. All rights reserved.',
+	lang: {
+		'en': 'English',
+		'zh-cn': '简体中文',
+		'zh-tw': '繁體中文'
+	},
+	label: {
+		email: 'Email',
+		language: 'Language',
+		logout: 'Logout',
+		login: 'Login',
+		edit: 'Edit',
+		del: 'Delete',
+		save: 'Save',
+		create: 'Create',
+		createAnother: 'Create Another One',
+		update: 'Update',
+		done: 'Done',
+		ok: 'OK',
+		cancel: 'Cancel',
+		close: 'Close',
+		name: 'Name',
+		desc: 'Description',
+		tag: 'Tag',
+		operation: 'Operation',
+		active: 'Active',
+		inactive: 'Inactive',
+		activate: 'Activate',
+		deactivate: 'Deactivate',
+		selectAll: 'Select All',
+		removeAll: 'Remove All',
+		more: 'More',
+		or: 'or',
+		sorry: 'Sorry',
+		refresh: 'Refresh',
+		overview: 'Overview',
+		iAmSure: 'Yes, I\'m sure.',
+		//menu
+		campaign: 'Campaign',
+		list: 'List',
+		management: 'Management',
+		property: 'Property',
+		user: 'User',
+		userGroup: 'User Group',
+		role: 'Role',
+		adSuffix: '[AD] Subject Suffix',
+		setting: 'Setting',
+		report: 'Report'
+	},
+	msg: {
+		loading: 'Loading...',
+		serverBusy: 'Server busy',
+		pageLoadError: 'The service has encountered an error, please refresh the page a frew senconds later.',
+		invalidUrl: 'The url you are trying to open is not a valid url.',
+		noResult: 'No results',
+		noPerm: 'You have no permission to access this page or the data.',
+		selectAtLeastOne: 'Please select at least one record from the list.',
+		validator: {
+			mandatory: 'Input required',
+			email: 'Invalid email address.',
+			emailList: 'Invalid email address.',
+			name: 'Must not contain semicolon.',
+			password: 'Password length must be between 6 and 16. The password must contain upper-case and lower-case alphabetic characters as well as numeric characters. It must not contain blank spaces.',
+			maxLength: 'Input length exceeded. You need to cut down {{1}} character(s).',
+			maxByteLength: 'Input length exceeded. You need to cut down {{1}} character(s).',
+			url: 'Invalid url.',
+			set: 'Can not has duplicate values, the max length of a value is 80, and values can not contain "||".',
+			number: 'You must input a number.',
+			integer: 'You must input an integer.',
+			datetime: 'Invalid datetime format.',
+			wordUpperCase: 'You can only input upper-case letter, digit or underscore.',
+			domain: 'Invalid domain name.',
+			domainList: 'Invalid domain name.'
+		},
+		mailCheck: 'Did you mean {{full}}?'
+	}
+});
+require.processDefQueue('', require.PAGE_BASE_URL, require.getBaseUrlConfig(require.PAGE_BASE_URL))
+
+
+</script>
+<script type="text/javascript">
+
+
+define("../../js/mod/nav-bar/profile.tpl.html", [ "require", "exports", "module" ], function(require, exports, module) {
+    function $encodeHtml(str) {
+        return (str + "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/`/g, "&#96;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+    }
+    exports.render = function($data, $opt) {
+        $data = $data || {};
+        var _$out_ = [];
+        var $print = function(str) {
+            _$out_.push(str);
+        };
+        (function() {
+            with ($data) {
+                _$out_.push('<div class="section"><div class="header handler" title="', email, '" data-rfl-click="toggleUserMenuSection"><i class="icon-caret-up"></i><i class="icon-caret-down"></i> ', $opt.util.headByByte(email, 22, "..."), '</div><ul class="body"><li><a href="javascript:void(0);" data-rfl-click="navLogout"><i class="icon-off"></i> &nbsp;&nbsp; Logout</a></li><li><a href="javascript:void(0);" data-rfl-click="navChangePassword"><i class="icon-key"></i> &nbsp;&nbsp; Change Password</a></li></ul></div>');
+                if (groups.length > 1) {
+                    _$out_.push('<div class="section"><div class="header handler" title="', $encodeHtml(currentGroup.name), '" data-rfl-click="toggleUserMenuSection"><i class="icon-caret-up"></i><i class="icon-caret-down"></i> ', $encodeHtml($opt.util.headByByte(currentGroup.name, 22, "...")), '</div><ul class="body group-list">');
+                    for (var i = 0; i < groups.length; i++) {
+                        var group = groups[i];
+                        if (group.enabled) {
+                            _$out_.push('<li><a href="javascript:void(0);" onclick="return false;" data-rfl-click="navChangeGroup ', group.id, '" title="', $encodeHtml(group.name), '">', $encodeHtml($opt.util.headByByte(group.name, 24, "...")), "</a></li>");
+                        }
+                    }
+                    _$out_.push("</ul></div>");
+                }
+                _$out_.push('<ul class="theme">');
+                $.each([ "purple", "red", "orange", "yellow", "blue", "sea", "green", "gray", "black" ], function(i, theme) {
+                    if (theme == G.THEME) {
+                        _$out_.push('<li class="', theme, ' active">', theme, "</li>");
+                    } else {
+                        _$out_.push('<li class="', theme, '" data-rfl-click="changeTheme ', theme, '">', theme, "</li>");
+                    }
+                });
+                _$out_.push("</ul>");
+            }
+        })();
+        return _$out_.join("");
+    };
+});
+
+define("../../js/mod/nav-bar/teacher-menu.tpl.html", [ "require", "exports", "module" ], function(require, exports, module) {
+    function $encodeHtml(str) {
+        return (str + "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/`/g, "&#96;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+    }
+    exports.render = function($data, $opt) {
+        $data = $data || {};
+        var _$out_ = [];
+        var $print = function(str) {
+            _$out_.push(str);
+        };
+        (function() {
+            with ($data) {
+                _$out_.push('<ul><li id="nav-dashboard"><a href="html/teacher/dashboard-en.html"><span class="icon"><i class="icon-home"></i></span><span>${{common.label.dashboard}}$</span></a></li><li class="divider">Management</li><li id="nav-generate-pager"><a href="#"><span class="icon"><i class="icon-user"></i></span><span>${{common.label.generatePager}}$</span></a></li><li id="nav-view-grade"><a href="#"><span class="icon"><i class="icon-group"></i></span><span>${{common.label.viewGrade}}$</span></a></li><li id="nav-add-subject"><a href="#"><span class="icon"><i class="icon-user-md"></i></span><span>${{common.label.addSubject}}$</span></a></li></ul>');
+            }
+        })();
+        return _$out_.join("");
+    };
+});
+
+define("../../js/mod/nav-bar/student-menu.tpl.html", [ "require", "exports", "module" ], function(require, exports, module) {
+    function $encodeHtml(str) {
+        return (str + "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/`/g, "&#96;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+    }
+    exports.render = function($data, $opt) {
+        $data = $data || {};
+        var _$out_ = [];
+        var $print = function(str) {
+            _$out_.push(str);
+        };
+        (function() {
+            with ($data) {
+                _$out_.push('<ul><li id="nav-dashboard"><a href="html/student/dashboard-en.html"><span class="icon"><i class="icon-home"></i></span><span>${{common.label.dashboard}}$</span></a></li><li class="divider">Management</li><li id="nav-online-testing"><a href="html/student/view-grade-en.html"><span class="icon"><i class="icon-user"></i></span><span>${{common.label.onlineTesting}}$</span></a></li><li id="nav-online-examination"><a href="#"><span class="icon"><i class="icon-group"></i></span><span>${{common.label.onlineExamination}}$</span></a></li><li id="nav-view-grade"><a href="html/student/view-grade-en.html"><span class="icon"><i class="icon-user-md"></i></span><span>${{common.label.viewGrade}}$</span></a></li></ul>');
+            }
+        })();
+        return _$out_.join("");
+    };
+});
+
+define('../../js/mod/nav-bar/init', ['require', 'exports', 'module', 'jquery', 'rfl', 'form-util', './profile.tpl.html', './teacher-menu.tpl.html', './student-menu.tpl.html'], function(require) {
+	var $ = require('jquery');
+	var rfl = require('rfl');
+	var formUtil = require('form-util');
+	var profileTpl = require('./profile.tpl.html');
+	var teacherMenu = require('./teacher-menu.tpl.html');
+	var studentMenu = require('./student-menu.tpl.html');
+	
+	var navBar = {};
+	var _opt;
+	var _listLoading = false;
+
+	function _initSearch() {
+		require(['./search-main'], function(search) {
+			search.init('.app-search', _opt);
+			formUtil.focus('#app-search-box-input');
+			_initSearch = function() {
+				search.clear();
+				formUtil.focus('#app-search-box-input');
+			};
+		});
+	};
+
+	function _toggleSearch() {
+		$(document.body).removeClass('menu-active');
+		$(document.body).toggleClass('search-active');
+		_initSearch();
+	};
+
+	function _renderListMenu() {
+		if(_listLoading) {
+			return;
+		}
+		_listLoading = true;
+		rfl.ajax.get({
+			url: 'lists',
+			cache: false,
+			data: {},
+			success: function(res) {
+				_listLoading = false;
+				if(res.code === 0) {
+					if(res.data.lists.length) {
+						$('.app-menu').append($('<div class="list-sub-menu"></div>'));
+						_renderListMenu = function() {
+							require(['./list-menu-main'], function(mod) {
+								mod.render('.app-menu .list-sub-menu', res.data.lists);
+							});
+						};
+						_renderListMenu();
+					}
+				}
+			},
+			error: function() {
+				_listLoading = false;
+			}
+		});
+	};
+
+	navBar.hideAppMenu = function() {
+		$('.app-menu').removeClass('list-menu-on');
+		$('.app-menu').removeClass('mouse-enter');
+	};
+	
+	navBar.init = function(navId, opt) {
+		_opt = opt || {};
+		var appMenuToRef, listMenuToRef;
+		var userData = rfl.auth.getData();
+		$('.app-top-bar .user').attr('title', userData.email).find('span').html(rfl.util.headByByte(userData.email.split('@')[0], 12, '...'));
+		$('.app-user-menu').html(profileTpl.render(userData, {util: rfl.util}));
+		if (userData.role == 'teacher') {
+			$('.main-menu').html(teacherMenu.render());
+		} else {
+			$('.main-menu').html(studentMenu.render());
+		}
+		$('#nav-' + navId).addClass('active');
+		rfl.Delegator.getPageDelegator().delegate('click', 'navChangeGroup', function(evt, gid) {
+			if(gid == rfl.auth.getData('currentGroup').id) {
+				return;
+			}
+			rfl.ajax.post({
+				queueName: 'changeGroup',
+				url: '/users/changeCurrentGroup',
+				data: {groupId: gid},
+				success: function(res) {
+					if(res.code === 0) {
+						location.reload();
+					} else {
+						rfl.alerts.show(res.message, 'error');
+					}
+				},
+				error: function() {
+					rfl.alerts.show(langResourceCommon.msg.serverBusy, 'error');
+				}
+			});
+		}).delegate('click', 'navChangePassword', function(evt) {
+			require(['./change-password-main'], function(mod) {
+				mod.show();
+				$(document.body).removeClass('search-active user-menu-active msg-box-active');
+			});
+		}).delegate('click', 'navLogout', function(evt) {
+			rfl.login.logout();
+		}, 1).delegate('click', 'changeTheme', function(evt, theme) {
+			rfl.cookie.set('theme', theme, '', '', 24 * 365);
+			location.reload();
+		}, 1).delegate('click', 'toggleUserMenuSection', function(evt) {
+			$(this).closest('.section').toggleClass('collapsed');
+		}, 1).delegate('click', 'toggleAppSearch', function(evt) {
+			_toggleSearch();
+		}, 1).delegate('click', 'toggleAppMsgBox', function(evt) {
+			$(document.body).removeClass('menu-active user-menu-active');
+			$(document.body).toggleClass('msg-box-active');
+		}, 2).delegate('click', 'toggleAppUserMenu', function(evt) {
+			$(document.body).removeClass('menu-active msg-box-active');
+			$(document.body).toggleClass('user-menu-active');
+		}, 1).delegate('click', 'toggleAppMenu', function(evt) {
+			$(document.body).removeClass('user-menu-active msg-box-active');
+			$(document.body).toggleClass('menu-active');
+		}, 1).delegate('click', 'fixAppMenu', function(evt) {
+			$(document.body).toggleClass('menu-fixed');
+			if($(document.body).hasClass('menu-fixed')) {
+				rfl.cookie.set('mf', '1', '', '', 24 * 365);
+			} else {
+				rfl.cookie.del('mf');
+			}
+		}, 1).delegate('click', 'toggleListSubMenuItem', function(evt) {
+			var subMenuItem = $(this).closest('li');
+			if(subMenuItem.hasClass('active')) {
+				$('li', '.list-sub-menu').removeClass('active');
+				$('.actions', subMenuItem).slideUp(250);
+			} else {
+				$('li', '.list-sub-menu').removeClass('active');
+				subMenuItem.addClass('active');
+				$('.actions', '.list-sub-menu').slideUp(250);
+				$('.actions', subMenuItem).slideDown(250);
+			}
+		}, 1).delegateAnonymous('click', function(evt) {
+			if($(this).closest('.app-top-bar .menu-handler, .app-menu, .app-top-bar .user, .app-user-menu, .app-top-bar .msg, .app-msg-box').length) {
+				return;
+			}
+			$(document.body).removeClass('menu-active user-menu-active msg-box-active');
+		});
+		$(window).on('keyup', function(evt) {
+			if(evt.keyCode === 27) {
+				$(document.body).removeClass('search-active user-menu-active msg-box-active');
+			}
+			if(evt.ctrlKey) {
+				if(evt.keyCode === 188) {
+					_toggleSearch();
+				} else if(evt.keyCode === 190) {
+					if($(document.body).hasClass('search-active')) {
+						require(['./search-main'], function(search) {
+							search.switchType();
+						});
+					}
+				}
+			}
+		});
+		$('.app-menu').on('mouseenter', function(evt) {
+			clearTimeout(appMenuToRef);
+			appMenuToRef = setTimeout(function() {
+				//_renderListMenu();
+				$('.app-menu').addClass('mouse-enter list-menu-on');
+			}, 200);
+		}).on('mouseleave', function(evt) {
+			clearTimeout(appMenuToRef);
+			appMenuToRef = setTimeout(function() {
+				$('.app-menu').removeClass('mouse-enter list-menu-on');
+			}, 400);
+		});
+		$('.app-top-bar .menu-home').on('mouseenter', function(evt) {
+			clearTimeout(appMenuToRef);
+			appMenuToRef = setTimeout(function() {
+				//_renderListMenu();
+				$('.app-menu').addClass('mouse-enter list-menu-on');
+			}, 400);
+		}).on('mouseleave', function(evt) {
+			clearTimeout(appMenuToRef);
+			appMenuToRef = setTimeout(function() {
+				$('.app-menu').removeClass('mouse-enter list-menu-on');
+			}, 400);
+		});
+		navBar.init = rfl.empty;
+	};
+	
+	return navBar;
+});
+require.processDefQueue('', require.PAGE_BASE_URL, require.getBaseUrlConfig(require.PAGE_BASE_URL))
+
+
+</script>
+<script type="text/javascript">
+
+
+G.getUrlParams = function(loc) {
+	loc = loc || window.location;
+	var raw = loc.search, res = {}, p, i;
+	if(raw) {
+		raw = raw.slice(1);
+		raw = raw.split('&');
+		for(i = 0, l = raw.length; i < l; i++) {
+			p = raw[i].split('=');
+			res[p[0]] = p[1] || '';
+		}
+	}
+	raw = loc.hash;
+	if(raw) {
+		raw = raw.slice(1);
+		raw = raw.split('&');
+		for(i = 0, l = raw.length; i < l; i++) {
+			p = raw[i].split('=');
+			res[p[0]] = res[p[0]] || p[1] || '';
+		}
+	}
+	return res;
+};
+
+G.getAjaxHistoryParams = function() {
+	return location.hash.replace(/^#!/, '').split('/');
+};
+
+G.resolveUrl = function(base, url) {
+	if(!url) {
+		url = base;
+		base = location.protocol + '//' + location.host + location.pathname;
+	}
+	if((/^https?:|^\//).test(url)) {
+		return url;
+	}
+	if((/^#/).test(url)) {
+		base = base + location.search;
+		url = base + url;
+	} else if((/^\?/).test(url)) {
+		url = base + url;
+	} else {
+		if(!(/^\./).test(url)) {
+			url = './' + url;
+		}
+		var bArr = base.split('/'),
+			pArr = url.split('/'),
+			part;
+		bArr.pop();
+		while(pArr.length) {
+			part = pArr.shift();
+			if(part == '..') {
+				if(bArr.length) {
+					part = bArr.pop();
+					while(part == '.') {
+						part = bArr.pop();
+					}
+					if(part == '..') {
+						bArr.push('..', '..');
+					}
+				} else {
+					bArr.push(part);
+				}
+			} else if(part != '.') {
+				bArr.push(part);
+			}
+		}
+		url = bArr.join('/');
+	}
+	return url;
+};
+
+G.getAjaxLoadUrl = function(url) {
+	var dataType;
+	if(G.ORIGIN == G.CGI_ORIGIN) {
+		dataType = 'json';
+	} else {
+		dataType = 'jsonp';
+	}
+	if(!(/^https?:/).test(url)) {
+		url = G.CGI_ORIGIN + G.CGI_BASE + url;
+	}
+	return url.replace(/[^\/]+$/, function(m) {
+		return m.replace(/^\w+/, function(m) {
+			return m + '.' + dataType;
+		});
+	});
+};
+
+G.pageRequire = require.extend({
+	baseUrl: require.PAGE_BASE_URL
+});
+
+//init tooltip and preload
+require(['jquery', 'spine', 'bootstrap', 'rfl'], function($, Spine, bt, rfl) {
+	if(navigator.userAgent.indexOf('Macintosh') >= 0 && navigator.userAgent.indexOf('Chrome') >= 0) {
+		$(window).on('load', function() {
+			document.body.scrollTop = 1;
+		});
+	}
+	Spine.Ajax.on('start', function() {
+		rfl.ajax.showLoading();
+	}).on('end', function() {
+		rfl.ajax.hideLoading();
+	});
+	$(document.body).tooltip({selector: '[data-toggle="tooltip"]'});
+	//Drag back and forward
+	(function() {
+		var downInfo = {
+			time: 0,
+			x: 0,
+			y: 0
+		};
+		$(document).on('mousedown', function(evt) {
+			if(evt.button === 1) {
+				downInfo = {
+					time: new Date(),
+					x: evt.clientX,
+					y: evt.clientY
+				};
+			}
+		}).on('mouseup', function(evt) {
+			var offsetX, offsetY;
+			if(evt.button === 1 && new Date() - downInfo.time < 500) {
+				offsetX = Math.abs(evt.clientX - downInfo.x);
+				offsetY = Math.abs(evt.clientY - downInfo.y);
+				if(offsetX > 300 && offsetX / offsetY >= 2) {
+					if(evt.clientX - downInfo.x > 0) {
+						history.back();
+					} else {
+						history.forward();
+					}
+				}
+			}
+		});
+	})();
+});
+
+
+</script>
+
+<script type="text/javascript">
+
+
+require.processDefQueue('', require.PAGE_BASE_URL, require.getBaseUrlConfig(require.PAGE_BASE_URL))
+
+</script>
+<script type="text/javascript">
+
+define("../../js/mod/student/views/view-grade.tpl.html", [ "require", "exports", "module", "rfl", "lang/" + G.LANG + "/common" ], function(require, exports, module) {
+    function $encodeHtml(str) {
+        return (str + "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/`/g, "&#96;").replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+    }
+    exports.render = function($data, $opt) {
+        $data = $data || {};
+        var _$out_ = [];
+        var $print = function(str) {
+            _$out_.push(str);
+        };
+        (function() {
+            with ($data) {
+                var rfl = require("rfl");
+                var langResourceCommon = require("lang/" + G.LANG + "/common");
+                _$out_.push("<h1>", langResourceCommon.label.viewGrade, "</h1>");
+            }
+        })();
+        return _$out_.join("");
+    };
+});
+
+// Generated by CoffeeScript 1.6.3
+(function() {
+  var __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  define('../../js/mod/student/controllers/view-grade', ['require', 'exports', 'module', 'jquery', 'spine', 'rfl', 'lang/' + G.LANG + '/common', '../views/view-grade.tpl.html'], function(require) {
+    var $, Spine, ViewGrade, langResourceCommon, rfl, _ref;
+    $ = require('jquery');
+    Spine = require('spine');
+    rfl = require('rfl');
+    langResourceCommon = require('lang/' + G.LANG + '/common');
+    ViewGrade = (function(_super) {
+      __extends(ViewGrade, _super);
+
+      function ViewGrade() {
+        _ref = ViewGrade.__super__.constructor.apply(this, arguments);
+        return _ref;
+      }
+
+      ViewGrade.prototype.viewGradeTpl = require('../views/view-grade.tpl.html');
+
+      ViewGrade.prototype.init = function() {
+        return this.render();
+      };
+
+      ViewGrade.prototype.render = function() {
+        return this.html(this.viewGradeTpl.render());
+      };
+
+      return ViewGrade;
+
+    })(Spine.Controller);
+    return ViewGrade;
+  });
+
+}).call(this);
+
+require.processDefQueue('', require.PAGE_BASE_URL, require.getBaseUrlConfig(require.PAGE_BASE_URL))
+
+</script>
+<script type="text/javascript">
+
+G.pageRequire(['../../js/mod/student/controllers/view-grade', '../../js/mod/nav-bar/init', 'ajax!' + G.getAjaxLoadUrl('users/information')], function(ViewGrade, navBar, auth) {
+	require(['rfl'], function(rfl) {
+		rfl.auth.init(auth, function() {
+			navBar.init('view-grade');
+			new ViewGrade({el: '#main-div'});
+		});
+	});
+}, function() {
+	require(['rfl'], function(rfl) {
+		rfl.ui.renderPageLoadError('#main-div');
+	});
+});
+
+</script>
+</body>
+</html>

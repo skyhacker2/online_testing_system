@@ -1,0 +1,269 @@
+.block-basic {
+  background-color: #eeeeee;
+  padding: 13px;
+  margin: 13px 0;
+  color: #555555;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.block-basic:before,
+.block-basic:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.block-basic:after {
+  clear: both;
+}
+.upload-wrapper {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 26px;
+}
+.upload-wrapper .upload-area {
+  background-color: #eeeeee;
+  width: 300px;
+  height: 236px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.upload-wrapper .upload-area .type-name {
+  height: 200px;
+  line-height: 200px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 300;
+  text-indent: -9999px;
+}
+.upload-wrapper .upload-area .type-name.excel {
+  background: url(../../../js/lib/bootstrap-3.0/img/excel-icon.png) 50% 50% no-repeat;
+}
+.upload-wrapper .upload-area .type-name.csv {
+  background: url(../../../js/lib/bootstrap-3.0/img/csv-icon.png) 50% 50% no-repeat;
+}
+.upload-wrapper .upload-area .hint-box {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 0;
+  top: -200px;
+  padding: 10px;
+  background-color: #e2e2e2;
+  text-align: center;
+  -webkit-transition: top 0.2s;
+  transition: top 0.2s;
+}
+.upload-wrapper .upload-area .hint-box .icon {
+  font-size: 80px;
+}
+.upload-wrapper .upload-area .size-limit {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #d5d5d5;
+  color: #555555;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.upload-wrapper .upload-area .size-limit strong {
+  font-weight: normal;
+}
+.upload-wrapper .upload-area .file-drop-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.upload-wrapper .upload-area .file-drop-area.drop-enter {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.upload-wrapper .upload-area:hover .hint-box {
+  top: 0;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .upload-wrapper .upload-area .type-name.excel {
+    background: url(../../../js/lib/bootstrap-3.0/img/excel-icon-2x.png) 50% 50% no-repeat;
+    background-size: auto 140px;
+  }
+  .upload-wrapper .upload-area .type-name.csv {
+    background: url(../../../js/lib/bootstrap-3.0/img/csv-icon-2x.png) 50% 50% no-repeat;
+    background-size: auto 140px;
+  }
+}
+.upload-customer-progress-bar {
+  width: 100%;
+  background-color: #eeeeee;
+  border: solid 1px #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.upload-customer-progress-bar .inner {
+  padding: 10px;
+}
+.upload-customer-progress-bar .progress-text {
+  text-align: center;
+  font-weight: bold;
+}
+.match-notice {
+  margin: 26px 0;
+}
+.match-notice label:first-child {
+  margin-right: 26px;
+}
+.match-notice .mockup-checkbox-label {
+  width: auto;
+  max-width: 200px;
+  margin-right: 26px;
+}
+.match-notice .mockup-checkbox-label .badge {
+  color: #fff;
+  margin-right: 0;
+  display: inline-block !important;
+}
+.match-notice .mockup-checkbox-label.recommanded {
+  color: #3a87ad;
+}
+.match-notice .mockup-checkbox-label.recommanded .badge {
+  background-color: #3a87ad;
+}
+.match-notice .mockup-checkbox-label.matched {
+  color: #468847;
+}
+.match-notice .mockup-checkbox-label.matched .badge {
+  background-color: #468847;
+}
+.match-notice .mockup-checkbox-label.follow-up {
+  color: #b94a48;
+}
+.match-notice .mockup-checkbox-label.follow-up .badge {
+  background-color: #b94a48;
+}
+.match-notice .mockup-checkbox-label.skipped {
+  color: #555555;
+}
+.match-notice .mockup-checkbox-label.skipped .badge {
+  background-color: #555555;
+}
+.match-notice .mockup-checkbox-label .mockup-checkbox.on span {
+  border: solid 2px #999999;
+  background-color: #eeeeee;
+}
+.match-notice .mockup-checkbox-label .mockup-checkbox.on span i {
+  visibility: visible;
+  color: #999999;
+}
+.match-column-wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: solid 2px #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 500px;
+}
+.match-column-wrapper table {
+  margin-bottom: 0;
+}
+.match-column-wrapper table th {
+  font-weight: normal;
+  padding: 0 !important;
+  border-right: solid 1px #eeeeee;
+  border-bottom: solid 1px #eeeeee;
+  background-color: #fbfbfb;
+}
+.match-column-wrapper td {
+  border-right: solid 1px #eeeeee;
+  border-top: none;
+  color: #999999;
+}
+.match-column-wrapper th.last,
+.match-column-wrapper td.last {
+  border-right: none;
+}
+.match-column-wrapper th.recommanded .th-header {
+  background-color: #d9edf7;
+  color: #3a87ad;
+}
+.match-column-wrapper th.matched .th-header {
+  background-color: #dff0d8;
+  color: #468847;
+}
+.match-column-wrapper th.follow-up .th-header {
+  background-color: #f2dede;
+  color: #b94a48;
+}
+.match-column-wrapper th.skipped .th-header {
+  background-color: #d5d5d5;
+  color: #555555;
+}
+.match-column-wrapper th input.input-small {
+  width: 110px;
+}
+.match-column-wrapper th textarea {
+  resize: none;
+  height: 40px;
+}
+.match-column-wrapper th textarea.focus {
+  width: 330px;
+  height: 200px;
+  position: absolute;
+  z-index: 998;
+}
+.match-column-wrapper .th-header {
+  padding: 8px;
+  border-bottom: solid 1px #eeeeee;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.match-column-wrapper .th-wrapper {
+  padding: 8px;
+}
+.match-column-wrapper .th-inner {
+  width: 222px;
+}
+.match-column-wrapper .th-inner h4 {
+  margin-bottom: 13px;
+}
+.match-column-wrapper .th-inner .mockup-radio-label {
+  margin-bottom: 14px;
+}
+.match-column-wrapper .place-holder-text {
+  height: 39px;
+  overflow: hidden;
+}
+.match-column-wrapper .place-holder-text.focus {
+  width: 330px;
+  height: 200px;
+  z-index: 999;
+}
+.match-column-wrapper .form-group {
+  margin-bottom: 8px;
+}
+.conflictions h3 {
+  font-weight: 300;
+}
+.conflictions h3 strong {
+  font-weight: normal;
+}
+@media screen and (max-width: 640px) {
+  .match-notice a,
+  .match-notice .mockup-checkbox-label {
+    display: block;
+  }
+}

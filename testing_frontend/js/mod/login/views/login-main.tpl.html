@@ -1,0 +1,26 @@
+<%
+var rfl = require('rfl');
+var langResourceCommon = require('lang/{{G.LANG}}/common');
+var langResourceGroup = require('lang/{{G.LANG}}/group');
+%>
+<style type="text/css">
+	.teacher-btn, .student-btn {
+		position: absolute;
+	}
+	.teacher-btn {
+		left: 0px;
+		top: 150px;
+	}
+	.student-btn {
+		left: 0px;
+		top: 250px;
+	}
+</style>
+<div>
+	<a class="teacher-btn" href="javascript:void(0);" >
+		<img src="<%G.CGI_BASE%>img/mod/login/teacher-login.jpg" width="200px" height="60px">
+	</a>
+	<a class="student-btn" href="javascript:void(0);">
+		<img src="<%G.CGI_BASE%>img/mod/login/student-login.jpg" width="200px" height="60px">
+	</a>
+<div>
